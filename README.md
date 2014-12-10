@@ -29,3 +29,10 @@ Notes:
 - refined stylings
 - added go to top button
 - added pst height theme option
+
+Future Updates:
+re-enable banner module to allow in module adding of dynamic contents (although banner modules must be the suggested content)
+create title module (for articles good for banner module)
+create pst module instead of pst theme option
+main menu fix position
+
