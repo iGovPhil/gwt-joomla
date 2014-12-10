@@ -1,16 +1,11 @@
-==gwt-joomla-3.4==
-Government Web Template 3.4 for Joomla 3.x
+==gwt-joomla-3.5==
+Government Web Template 3.5 for Joomla 3.x
 
 Notes:
 * See modulepositions.jpg in /images for this template's module positions.
 * Banner width should be 1250px
 * Any content in the masthead area should NOT EXCEED 100px.
 * For experienced Joomla users, please report any template issues to gwtsupport@i.gov.ph.
-
-Updates:
-* Foundation framework updated to 5.3
-* New module positions
-* Bug fixes for template overrides from gwt-joomla-2.2.3
 
 ###### CHANGE LOGS
 **2014-01-29**
