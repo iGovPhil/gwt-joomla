@@ -52,9 +52,10 @@ h1, h2, h3, h4, h5, h6 {font-family: "Roboto Condensed",sans-serif; font-weight:
 .top-bar-section li:not(.has-form) a:not(.button):hover,
 .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button){ background: #EDEDED; color: #000; }
 .top-bar-section > ul > [role="separator"]{ height: 58px; }
+.top-bar.expanded .top-bar-section > ul > .divider{ display: none; }
 .top-bar-section > ul > .divider,
 .top-bar-section > ul > [role="separator"],
-.top-bar-section ul li{ border-right: solid 1px #ebebeb; }
+.top-bar-section ul li{ border-right: solid 1px #ebebeb; height: 58px; }
 .top-bar-section .has-dropdown > a:after{ border-color: transparent transparent transparent rgba(0, 0, 0, 0.4); }
 
 .top-bar.expanded ul li{ border: 0; }
@@ -155,8 +156,8 @@ p.img_caption {font-size: 0.75rem;}
  *
  */
 @media only screen and (max-width: 40em) {
-	#aux-nav{  left: 0 !important;  width: 100% !important;  height: auto;  overflow: auto;  border-bottom: 1px solid #D8D8D8; }
-	#aux-nav section > ul{  width: 100%;  margin: 0;  padding: 0 20px;  height: auto; }
+	#aux-nav{  left: 0 !important;  width: 100% !important; position: static !important; height: auto;  overflow: auto;  border-bottom: 1px solid #D8D8D8; }
+	#aux-nav section > ul{  width: 100%;  margin: 0; height: auto; }
 	#aux-nav ul > li{  width: 100%;  display: block; }
 	#aux-nav ul li > a{  width: 100%;  display: block;  line-height: 58px;  background: #f7f7f7;  color: #000;  font-size: 13px;  padding: 0 20px;  position: relative;  border-top: 1px solid #ebebeb; }
 	#aux-nav ul li a:hover{  background: #EDEDED; }
@@ -167,7 +168,8 @@ p.img_caption {font-size: 0.75rem;}
 	#aux-nav ul li.has-dropdown ul li > a{ }
 	#banner{  display: none; }
 }
-@media only screen and (min-width: 40.063em) { .top-bar-section .has-dropdown > a:after{  border: inset 5px;  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;  border-top-style: solid;  margin-top: 2.5px; }
+@media only screen and (min-width: 40.063em) {
+	.top-bar-section .has-dropdown > a:after{  border: inset 5px;  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;  border-top-style: solid;  margin-top: 2.5px; }
 	#aux-nav{  position: static !important;  width: auto !important;  top: auto !important;  left: auto !important;
 	background: #f7f7f7;  color: #000;  line-height: 58px;  font-size: 13px; }
 	#aux-nav .has-dropdown{ }

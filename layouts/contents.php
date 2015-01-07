@@ -1,8 +1,8 @@
 <!-- contents -->
 <?php
-$pstHeight = 0;
-if(is_int($this->params->get('pstHeight'))):
-	$pstHeight = $this->params->get('pstHeight');
+$pstHeight = '50';
+if($this->params->get('pstHeight')):
+	$pstHeight = (int)$this->params->get('pstHeight');
 endif;
 ?>
 <div id="main"><a name="maincontents"></a>
