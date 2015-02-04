@@ -8,8 +8,6 @@ $doc = JFactory::getDocument();
 
 $doc->addStyleSheet('templates/' . $this->template . '/css/foundation.css');
 $doc->addStyleSheet('templates/' . $this->template . '/style.css');
-$doc->addScript('templates/' . $this->template . '/js/vendor/modernizr.js', 'text/javascript');
-JHtml::_('jquery.framework');
 
 $option = JFactory::getApplication()->input->getVar('option');
 $view = JFactory::getApplication()->input->getVar('view');
@@ -119,42 +117,12 @@ if ($this->params->get('accessSearch')){
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/panel-bottom.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/agencyfooter.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/standardfooter.php'; ?>
-<div><a href="#page" id="back-to-top" style="display: inline;">Back to Top</a></div>
-<script type="text/javascript">
-jQuery(document).ready(function($){
-  var offset = 220;
-  var duration = 500;
-  $(window).scroll(function() {
-      if ($(this).scrollTop() > offset) {
-          $('#back-to-top').fadeIn(duration);
-      } else {
-          $('#back-to-top').fadeOut(duration);
-      }
-  });
-
-  $('#back-to-top').click(function(event) {
-      event.preventDefault();
-      $('html, body').animate({scrollTop: 0}, duration);
-      return false;
-  });
-});
-</script>
+<div><a href="#main-nav" id="back-to-top" style="display: inline;">Back to Top</a></div>
 <!--a href="#" class="scrollup">Scroll</a><a>Hello</a-->
 <!-- JS Files -->
 <script src="<?php echo 'templates/' . $this->template . '/js/vendor/jquery.js'; ?>"></script>
 <script src="<?php echo 'templates/' . $this->template . '/js/foundation.min.js'; ?>"></script>
-<script>
-$(document).ready(function(){
-  $(document).foundation();
-  $(document).foundation('section').foundation('orbit', {
-    animation: 'fade',
-    timer_speed: 5000,
-  	pause_on_hover: true,
-  	resume_on_mouseout: true,
-    bullets: false,
-    variable_height: false
-  });
-});
-</script>
+<script src="<?php echo 'templates/' . $this->template . '/js/vendor/modernizr.js'; ?>"></script>
+<script src="<?php echo 'templates/' . $this->template . '/js/theme.js'; ?>"></script>
 </body>
 </html>
