@@ -8,6 +8,7 @@ Notes:
 
 Future updates:
 - Use banner module for banner
+- Set automatic width of banner image
 - Add title module
 - Optimization, minifcation and sprites
 - Sanitize implementation of internal codes

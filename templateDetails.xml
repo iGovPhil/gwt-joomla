@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.5.1" type="template" client="site">
-  <name>gwt-joomla-3.5.1</name>
-  <version>3.5.1</version>
+<extension version="3.5.2" type="template" client="site">
+  <name>gwt-joomla-3.5.2</name>
+  <version>3.5.2</version>
   <creationDate>Dec 2014</creationDate>
   <author>iGov Philippines</author>
   <authorEmail>gwtsupport@i.gov.ph</authorEmail>
   <authorURL>http://i.gov.ph</authorURL>
   <copyright>All content is in the public domain unsless otherwise stated.</copyright>
   <license>GNU General Public License version 2 or later</license>
-  <description>Government Web Template for Joomla 3.x, version 3.5.1</description>
+  <description>Government Web Template for Joomla 3.x, version 3.5.2</description>
   
   <files>
 	  <filename>index.php</filename>
 	  <filename>templateDetails.xml</filename>
-      <filename>framework.php</filename>
+    <filename>framework.php</filename>
 	  <filename>favicon.ico</filename>
 	  <filename>style.css</filename>
 	  <filename>template_preview.png</filename>
 	  <filename>template_thumbnail.png</filename>
 	  <filename>robots.txt</filename>
-      <folder>css</folder>
-      <folder>js</folder>
-      <folder>images</folder>
-      <folder>html</folder>
-      <folder>layouts</folder>
+    <folder>css</folder>
+    <folder>js</folder>
+    <folder>images</folder>
+    <folder>html</folder>
+    <folder>layouts</folder>
   </files>
   
   <positions>
@@ -55,24 +55,20 @@
   </positions>
 
   <config>
-    <fields name="params">  
-          
+    <fields name="params">
       <fieldset name="themeOptions" label="Theme Options">
-
-        <field name="agencyLogo" class="" type="media" default=""
-          label="Header Logo Upload"
-          description="Upload the image of your logo with agency name here" />
+        <field name="agencyLogo" class="" type="media" default="" label="Header Logo Upload" description="Upload the image of your logo with agency name here" />
 		  
-		<field name="logoPosition"
-			type="radio"
-			class="btn-group"
-			default="0"
-			label="Header Logo Position"
-			description="Select Logo Position">
-			
-			<option value="0">LEFT</option>
-			<option value="1">CENTER</option>
-		</field>
+    		<field name="logoPosition" 
+          type="radio" 
+          class="btn-group"
+    			default="0"
+    			label="Header Logo Position"
+    			description="Select Logo Position">
+    			
+    			<option value="0">LEFT</option>
+    			<option value="1">CENTER</option>
+    		</field>
 			
         <field name="headerBackgroundColor" class="" type="color" default="#0D4E86"
           label="Header Background Color"
@@ -82,39 +78,39 @@
           label="Header Background Image"
           description="Enter your header's background image here." />
 		  
-  		<field name="headerColumns" type="radio" class="btn-group" default="0" label="Header Columns" description="Select number of columns for header.">
-  			<option value="0">1 COL</option>
-  			<option value="1">2 COLS</option>
-  			<option value="2">3 COLS Left</option>
-			<option value="3">3 COLS Right</option>
-  		</field>
+    		<field name="headerColumns" type="radio" class="btn-group" default="0" label="Header Columns" description="Select number of columns for header.">
+    			<option value="0">1 COL</option>
+    			<option value="1">2 COLS</option>
+    			<option value="2">3 COLS Left</option>
+  			  <option value="3">3 COLS Right</option>
+    		</field>
           
         <field name="bannerBackgroundColor" class="" type="color" default="#0D4E86"
           label="Banner Background Color"
           description="Enter the hex code for your banner background color." />
 		  
-		<field name="bannerBackgroundImage" class="" type="media" default="" label="Banner Background Image" description="Enter your banner's background image here." />
-		
-		<field name="bannerPosition" type="radio" class="btn-group" default="0" label="Banner Position" description="Select banner position">
-			<option value="0">Standard 1 COL</option>
-			<option value="1">Standard 2 COLS</option>
-			<option value="2">Full Width</option>
-		</field>
+    		<field name="bannerBackgroundImage" class="" type="media" default="" label="Banner Background Image" description="Enter your banner's background image here." />
+    		
+    		<field name="bannerPosition" type="radio" class="btn-group" default="0" label="Banner Position" description="Select banner position">
+    			<option value="0">Standard 1 COL</option>
+    			<option value="1">Standard 2 COLS</option>
+    			<option value="2">Full Width</option>
+    		</field>
 		
         <field name="bannerFeaturedColor" class="" type="color" default=""
           label="Banner Featured Content Color"
           description="Enter the hex code for your banner's featured content background color." />
 		  
-          <field name="bannerFeaturedImage" class="" type="media" default=""
-            label="Banner Featured Content Background Image"
-            description="Enter your banner's featured content background image here." />
+        <field name="bannerFeaturedImage" class="" type="media" default=""
+          label="Banner Featured Content Background Image"
+          description="Enter your banner's featured content background image here." />
 		
-		<field name="sidebarPosition" type="radio" class="btn-group" default="3" label="Sidebar Position" description="Select sidebar position">
-			<option value="0">LEFT</option>
-      <option value="3">BOTH</option>
-			<option value="1">RIGHT</option>
-			<option value="2">NO SIDEBAR</option>
-		</field>
+    		<field name="sidebarPosition" type="radio" class="btn-group" default="3" label="Sidebar Position" description="Select sidebar position">
+    			<option value="0">LEFT</option>
+          <option value="3">BOTH</option>
+    			<option value="1">RIGHT</option>
+    			<option value="2">NO SIDEBAR</option>
+    		</field>
 		
         <!-- TODO: must create a pst module -->
         <field name="pstPosition" type="radio" class="btn-group" default="0" label="PST Position" description="Position of the Philippine Standard Module. If none, must have a replacement PST module.">
@@ -152,7 +148,7 @@
         <field name="imgExcerpt6" label="Caption 6" description="Caption 6" type="text" />
         <field name="imgLink6" label="Link 6" description="Link 6" type="text" />
     	
-    	<field name="imgUrl7" label="Image 7" description="Image 7" type="media" />
+    	  <field name="imgUrl7" label="Image 7" description="Image 7" type="media" />
         <field name="imgExcerpt7" label="Caption 7" description="Caption 7" type="text" />
         <field name="imgLink7" label="Link 7" description="Link 7" type="text" />
         
@@ -177,14 +173,14 @@
         <field type="note" description="Chrome for Windows press (Alt+shortcut_key)" />
         <field type="note" description="For Firefox press (Alt+Shift+shortcut_key)" />
         <field type="note" description="For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter)" />
-		<field name="accessAccessibility" class="" type="text" default="" label="Accessibility Access Key Site (Combination+0): Accessibility Statement" description="Enter link for accessibility accesskey (0)" />
-		<field name="accessHome" class="" type="text" default="index.php" label="Accessibility Access Key Site (Alt+1): Home" description="Enter link for home accesskey (1)" />
-		<field name="accessContent" class="" type="text" default="#maincontents" label="Accessibility Access Key Site (Alt+R): Main Content" description="Enter link for main content accesskey (R)" />
-		<field name="accessFAQ" class="" type="text" default="" label="Accessibility Access Key Site (Alt+5): FAQ" description="Enter link for FAQ accesskey (5)" />
-		<field name="accessContact" class="" type="text" default="" label="Accessibility Access Key Site (Alt+C): Contact" description="Enter link for search accesskey (C)" />
-		<field name="accessFeedback" class="" type="text" default="" label="Accessibility Access Key Site (Alt+K): Feedback" description="Enter link for search accesskey (K)" />
-		<field name="accessSiteMap" class="" type="text" default="#agencyfooter" label="Accessibility Access Key Site (Alt+M): Site Map" description="Enter link for search accesskey (M)" />
-		<field name="accessSearch" class="" type="text" default="" label="Accessibility Access Key Site (Alt+S): Search" description="Enter link for search accesskey (S)" />
+    		<field name="accessAccessibility" class="" type="text" default="" label="Accessibility Access Key Site (Combination+0): Accessibility Statement" description="Enter link for accessibility accesskey (0)" />
+    		<field name="accessHome" class="" type="text" default="index.php" label="Accessibility Access Key Site (Alt+1): Home" description="Enter link for home accesskey (1)" />
+    		<field name="accessContent" class="" type="text" default="#maincontents" label="Accessibility Access Key Site (Alt+R): Main Content" description="Enter link for main content accesskey (R)" />
+    		<field name="accessFAQ" class="" type="text" default="" label="Accessibility Access Key Site (Alt+5): FAQ" description="Enter link for FAQ accesskey (5)" />
+    		<field name="accessContact" class="" type="text" default="" label="Accessibility Access Key Site (Alt+C): Contact" description="Enter link for search accesskey (C)" />
+    		<field name="accessFeedback" class="" type="text" default="" label="Accessibility Access Key Site (Alt+K): Feedback" description="Enter link for search accesskey (K)" />
+    		<field name="accessSiteMap" class="" type="text" default="#agencyfooter" label="Accessibility Access Key Site (Alt+M): Site Map" description="Enter link for search accesskey (M)" />
+    		<field name="accessSearch" class="" type="text" default="" label="Accessibility Access Key Site (Alt+S): Search" description="Enter link for search accesskey (S)" />
       </fieldset>
     </fields>
   </config>
