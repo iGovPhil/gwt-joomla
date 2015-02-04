@@ -13,6 +13,9 @@ Future updates:
 - Optimization, minifcation and sprites
 - Sanitize implementation of internal codes
 
+Known Bugs:
+- Panel-top hide region when no module is added on it
+
 ###### CHANGE LOGS
 **2014-01-29**
 - Fix feeds module bug
