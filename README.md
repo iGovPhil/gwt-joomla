@@ -46,3 +46,6 @@ Known Bugs:
 
 **2015-02-04**
 - removed inline scripts on body, added theme.js
+
+**2015-02-24**
+- added accessibility quick menu
