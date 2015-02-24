@@ -26,4 +26,11 @@ jQuery(function($) {
       $('html, body').animate({scrollTop: 0}, duration);
       return false;
   });
+
+  $('#accessibility-links ul li a').focus(function(){
+    $(this).parent().addClass('access-focus');
+  });
+  $('#accessibility-links ul li a').blur(function(){
+    $(this).parent().removeClass('access-focus');
+  })
 });

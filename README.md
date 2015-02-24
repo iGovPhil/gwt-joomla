@@ -12,6 +12,7 @@ Future updates:
 - Add title module
 - Optimization, minifcation and sprites
 - Sanitize implementation of internal codes
+- division borders for the menu
 
 Known Bugs:
 - Panel-top hide region when no module is added on it

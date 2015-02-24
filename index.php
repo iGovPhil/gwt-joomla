@@ -64,28 +64,28 @@ $feedbackLink = '';
 $sitemapLink = '';
 $searchLink = '';
 if($this->params->get('accessAccessibility')){
-	$accessibilityLink = '<a class="skips" href="'.$this->params->get('accessAccessibility').'" accesskey="0">Skip to Accessibility Instructions</a>';
+	$accessibilityLink = '<li><a class="skips" href="'.$this->params->get('accessAccessibility').'" accesskey="0">Accessibility Statement</a></li>';
 }
 if ($this->params->get('accessHome')){
-	$homeLink = '<a class="skips" href="'.$this->params->get('accessHome').'" accesskey="1">Skip to Home</a>';
+	$homeLink = '<li><a class="skips" href="'.$this->params->get('accessHome').'" accesskey="1">Home</a></li>';
 }
 if ($this->params->get('accessContent')){
-	$contentLink = '<a class="skips" href="'.$this->params->get('accessContent').'" accesskey="R">Skip to Content</a>';
+	$contentLink = '<li><a class="skips" href="'.$this->params->get('accessContent').'" accesskey="R">Skip to Content</a></li>';
 }
 if ($this->params->get('accessFAQ')){
-	$FAQLink = '<a class="skips" href="'.$this->params->get('accessFAQ').'" accesskey="5">Skip to FAQ</a>';
+	$FAQLink = '<li><a class="skips" href="'.$this->params->get('accessFAQ').'" accesskey="5">FAQ</a></li>';
 }
 if ($this->params->get('accessContact')){
-	$contactLink = '<a class="skips" href="'.$this->params->get('accessContact').'" accesskey="C">Skip to Contact</a>';
+	$contactLink = '<li><a class="skips" href="'.$this->params->get('accessContact').'" accesskey="C">Contact</a></li>';
 }
 if ($this->params->get('accessFeedback')){
-	$feedbackLink = '<a class="skips" href="'.$this->params->get('accessFeedback').'" accesskey="K">Skip to Feedback</a>';
+	$feedbackLink = '<li><a class="skips" href="'.$this->params->get('accessFeedback').'" accesskey="K">Feedback</a></li>';
 }
 if ($this->params->get('accessSiteMap')){
-	$sitemapLink = '<a class="skips" href="'.$this->params->get('accessSiteMap').'" accesskey="M">Skip to Site Map</a>';
+	$sitemapLink = '<li><a class="skips" href="'.$this->params->get('accessSiteMap').'" accesskey="M">Site Map</a></li>';
 }
 if ($this->params->get('accessSearch')){
-	$searchLink = '<a class="skips" href="'.$this->params->get('accessSearch').'" accesskey="S">Skip to Search</a>';
+	$searchLink = '<li><a class="skips" href="'.$this->params->get('accessSearch').'" accesskey="S">Search</a></li>';
 }
 ?>
 <!DOCTYPE html>
@@ -98,15 +98,23 @@ if ($this->params->get('accessSearch')){
   <script src="<?php echo 'templates/' . $this->template . '/js/vendor/modernizr.js'; ?>"></script>
 </head>
 <body>
-<div id="accessibility" style="display: none;">
-	<?php echo $accessibilityLink; ?>
-	<?php echo $homeLink; ?>
-	<?php echo $contentLink; ?>
-	<?php echo $FAQLink; ?>
-	<?php echo $contactLink; ?>
-	<?php echo $feedbackLink; ?>
-	<?php echo $sitemapLink; ?>
-	<?php echo $searchLink; ?>
+<div id="accessibility-links">
+  <ul>
+    <?php echo $contentLink; ?>
+    <?php echo $sitemapLink; ?>
+  </ul>
+</div>
+<div id="accessibility-shortcuts">
+  <ul>
+  	<?php echo $accessibilityLink; ?>
+  	<?php echo $homeLink; ?>
+  	<?php echo $contentLink; ?>
+  	<?php echo $FAQLink; ?>
+  	<?php echo $contactLink; ?>
+  	<?php echo $feedbackLink; ?>
+  	<?php echo $sitemapLink; ?>
+  	<?php echo $searchLink; ?>
+  </ul>
 </div>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/topbar.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/masthead.php'; ?>

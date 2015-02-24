@@ -1,5 +1,3 @@
-<!-- modules -->
-<div id="panel-bottom" class="row">
 <?php
 $class_btm1 = '';
 $class_btm2 = '';
@@ -96,6 +94,8 @@ $class_btm2 .= ' columns';
 $class_btm3 .= ' columns';
 $class_btm4 .= ' columns';
 ?>
+<!-- modules -->
+<div id="panel-bottom" class="row">
 		<?php if($this->countModules('panel-btm-1')): ?>
 		<div class="<?php echo $class_btm1; ?>">
 			<jdoc:include type="modules" name="panel-btm-1" style="xhtml" />
