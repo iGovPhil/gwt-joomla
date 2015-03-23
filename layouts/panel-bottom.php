@@ -94,6 +94,9 @@ $class_btm2 .= ' columns';
 $class_btm3 .= ' columns';
 $class_btm4 .= ' columns';
 ?>
+<?php
+if($this->countModules('panel-btm-1') && $this->countModules('panel-btm-2') && $this->countModules('panel-btm-3') && $this->countModules('panel-btm-4')):
+	?>
 <!-- modules -->
 <div id="panel-bottom" class="row">
 		<?php if($this->countModules('panel-btm-1')): ?>
@@ -117,4 +120,7 @@ $class_btm4 .= ' columns';
 		</div>
 		<?php endif; ?>
 </div>
+<?php
+endif;
+?>
 <!-- end modules -->
