@@ -6,7 +6,7 @@ Notes:
 * Any content in the masthead area should NOT EXCEED 100px.
 * For experienced Joomla users, please report any template issues to gwtsupport@i.gov.ph.
 
-Future updates:
+###### Future updates:
 - Use banner module for banner
 - Set automatic width of banner image
 - Add title module
@@ -14,6 +14,9 @@ Future updates:
 - Sanitize implementation of internal codes
 - division borders for the menu
 - menu item type -- menu heading template
+- mac accessibility key - alt + option
+- uppercase titles, use smaller sizes
+- banner, transitions, replace to responsive slider
 
 Known Bugs:
 - Panel-top hide region when no module is added on it
