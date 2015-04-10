@@ -1,4 +1,14 @@
 <?php
+/**
+ * @file
+ * panel btm region
+ */
+?>
+<?php if($this->countModules('panel-btm-1') || 
+	$this->countModules('panel-btm-2') ||
+	$this->countModules('panel-btm-3') ||
+	$this->countModules('panel-btm-4')
+	):
 $class_btm1 = '';
 $class_btm2 = '';
 $class_btm3 = '';
@@ -94,9 +104,6 @@ $class_btm2 .= ' columns';
 $class_btm3 .= ' columns';
 $class_btm4 .= ' columns';
 ?>
-<?php
-if($this->countModules('panel-btm-1') && $this->countModules('panel-btm-2') && $this->countModules('panel-btm-3') && $this->countModules('panel-btm-4')):
-	?>
 <!-- modules -->
 <div id="panel-bottom" class="row">
 		<?php if($this->countModules('panel-btm-1')): ?>
@@ -120,7 +127,5 @@ if($this->countModules('panel-btm-1') && $this->countModules('panel-btm-2') && $
 		</div>
 		<?php endif; ?>
 </div>
-<?php
-endif;
-?>
 <!-- end modules -->
+<?php endif; ?>

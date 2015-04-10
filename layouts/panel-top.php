@@ -1,4 +1,17 @@
 <?php
+/**
+ * @file
+ * panel top region
+ */
+?>
+<?php if($this->countModules('panel-top-1') || 
+	$this->countModules('panel-top-2') ||
+	$this->countModules('panel-top-3') ||
+	$this->countModules('panel-top-4')): ?>
+<!-- modules -->
+<div id="panel-top" class="row">
+
+<?php
 $class_top1 = '';
 $class_top2 = '';
 $class_top3 = '';
@@ -94,11 +107,6 @@ $class_top2 .= ' columns';
 $class_top3 .= ' columns';
 $class_top4 .= ' columns';
 ?>
-<!-- modules -->
-<?php 
-if($this->countModules('panel-top-1') && $this->countModules('panel-top-2') && $this->countModules('panel-top-3') && $this->countModules('panel-top-4')):
-	?>
-<div id="panel-top" class="row">
 <?php if($this->countModules('panel-top-1')): ?>
 <div class="<?php echo $class_top1; ?>">
 	<jdoc:include type="modules" name="panel-top-1" style="xhtml" />
@@ -122,6 +130,7 @@ if($this->countModules('panel-top-1') && $this->countModules('panel-top-2') && $
 	<jdoc:include type="modules" name="panel-top-4" style="xhtml" />
 </div>
 <?php endif; ?>
+
 </div>
 <!-- end modules -->
 <?php endif; ?>
