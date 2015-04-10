@@ -19,7 +19,7 @@ Notes:
 - banner, transitions, replace to responsive slider
 
 Known Bugs:
-- Panel-top hide region when no module is added on it
+- Some copy of joomla causes module assignment visibility to not filter properly
 
 ###### CHANGE LOGS
 **2014-01-29**
@@ -53,3 +53,7 @@ Known Bugs:
 
 **2015-02-24**
 - added accessibility quick menu
+
+**2015-04-10**
+- remove top and bottom panel container when no module exists
+- remove agency footer container when no module exists

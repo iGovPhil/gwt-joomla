@@ -1,3 +1,15 @@
+<?php
+/**
+ * @file
+ * agency footer template
+ */
+?>
+<?php if($this->countModules('footer-1') || 
+	$this->countModules('footer-2') ||
+	$this->countModules('footer-3') ||
+	$this->countModules('footer-4')
+	):
+?>
 <!-- agency footer -->
 <div id="footer" name="agencyfooter">
 <div class="row">
@@ -121,3 +133,4 @@ $class_footer4 .= ' columns';
 </div>
 </div>
 <!-- end agency footer-->
+<?php endif ?>
