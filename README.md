@@ -12,7 +12,6 @@ Notes:
 - Add title module
 - Optimization, minifcation and sprites
 - Sanitize implementation of internal codes
-- division borders for the menu
 - menu item type -- menu heading template
 - mac accessibility key - alt + option
 - uppercase titles, use smaller sizes
