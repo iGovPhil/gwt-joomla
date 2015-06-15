@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <extension version="3.0" type="template" client="site">
 <name>gwt-joomla</name>
 <version>3.5.3</version>
+=======
+<extension version="master" type="template" client="site">
+<name>gwt-joomla-3.5.4</name>
+<version>3.5.4</version>
+>>>>>>> 1d91c2085ec45065d175c065e120d9bf172f1320
 <creationDate>Dec 2014</creationDate>
 <author>iGov Philippines</author>
-<authorEmail>gwtsupport@i.gov.ph</authorEmail>
+<authorEmail>helpdesk@i.gov.ph</authorEmail>
 <authorURL>http://i.gov.ph</authorURL>
 <copyright>All content is in the public domain unsless otherwise stated.</copyright>
 <license>GNU General Public License version 2 or later</license>

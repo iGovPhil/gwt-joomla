@@ -4,7 +4,7 @@ Notes:
 * See modulepositions.jpg in /images for this template's module positions.
 * Banner width should be 1250px
 * Any content in the masthead area should NOT EXCEED 100px.
-* For experienced Joomla users, please report any template issues to gwtsupport@i.gov.ph.
+* For experienced Joomla users, please report any template issues to helpdesk@i.gov.ph.
 
 ###### Future updates:
 - Use banner module for banner
