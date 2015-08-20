@@ -56,3 +56,9 @@ Known Bugs:
 **2015-04-10**
 - remove top and bottom panel container when no module exists
 - remove agency footer container when no module exists
+
+**08/20/2015**
+- Added new accessibility features
+  - High Contrast Mode
+  - Grayscale Mode
+  - Toggle font size

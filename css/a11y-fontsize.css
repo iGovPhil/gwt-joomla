@@ -1,0 +1,11 @@
+body.fontsize, .fontsize h4, .fontsize h5, .fontsize h6, .fontsize p, .fontsize li, .fontsize label, .fontsize input, .fontsize select, .fontsize textarea, .fontsize legend, .fontsize code, .fontsize pre {
+    font-size: 115% !important;
+}
+
+.fontsize #main-nav a{
+    font-size: 85% !important;
+}
+
+.fontsize #main-nav .name a{
+    font-size: 130% !important;
+}

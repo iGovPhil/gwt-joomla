@@ -8,6 +8,17 @@ $doc = JFactory::getDocument();
 
 $doc->addStyleSheet('templates/' . $this->template . '/css/foundation.css');
 $doc->addStyleSheet('templates/' . $this->template . '/style.css');
+// $doc->addStyleSheet('templates/' . $this->template . '/css/a11y-desaturate.css');
+// $doc->addStyleSheet('templates/' . $this->template . '/css/accessibility.css');
+
+$doc->addStyleSheet('templates/' . $this->template . '/css/a11y-fontsize.css');
+
+
+//***** sample accessibility *****//
+// $doc->addStyleSheet('templates/' . $this->template . '/css/a11y-contrast.css');
+// $doc->addStyleSheet("templates/gwt-joomla-3.5.4/css/a11y-contrast.css");
+//***** sample accessibility *****//
+
 
 $option = JFactory::getApplication()->input->getVar('option');
 $view = JFactory::getApplication()->input->getVar('view');
@@ -96,8 +107,25 @@ if ($this->params->get('accessSearch')){
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="<?php echo 'templates/' . $this->template . '/js/vendor/modernizr.js'; ?>"></script>
+
 </head>
 <body>
+
+<!-- accessibility -->
+
+<div id="acsblty">
+  <input id="tmp-link" type="hidden" data-link="<?php echo 'templates/' . $this->template ?>">
+  <div>
+    <ul>
+      <li><a href="#" class="toggle-contrast" id="is_normal_contrast" ><div></div></a></li>
+      <li><a href="#" class="toggle-grayscale" id="is_normal_color" ><div></div></a></li>
+      <li><a href="#" class="toggle-fontsize" id="is_normal_fontsize" ><div></div></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- accessibility -->
+
 <div id="accessibility-links">
   <ul>
     <?php echo $contentLink; ?>
@@ -106,14 +134,14 @@ if ($this->params->get('accessSearch')){
 </div>
 <div id="accessibility-shortcuts">
   <ul>
-  	<?php echo $accessibilityLink; ?>
-  	<?php echo $homeLink; ?>
-  	<?php echo $contentLink; ?>
-  	<?php echo $FAQLink; ?>
-  	<?php echo $contactLink; ?>
-  	<?php echo $feedbackLink; ?>
-  	<?php echo $sitemapLink; ?>
-  	<?php echo $searchLink; ?>
+    <?php echo $accessibilityLink; ?>
+    <?php echo $homeLink; ?>
+    <?php echo $contentLink; ?>
+    <?php echo $FAQLink; ?>
+    <?php echo $contactLink; ?>
+    <?php echo $feedbackLink; ?>
+    <?php echo $sitemapLink; ?>
+    <?php echo $searchLink; ?>
   </ul>
 </div>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/topbar.php'; ?>
@@ -126,11 +154,26 @@ if ($this->params->get('accessSearch')){
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/agencyfooter.php'; ?>
 <?php include_once JPATH_THEMES . '/' . $this->template . '/layouts/standardfooter.php'; ?>
 <div><a href="#main-nav" id="back-to-top" style="display: inline;">Back to Top</a></div>
+
+
+
+
 <!--a href="#" class="scrollup">Scroll</a><a>Hello</a-->
 <!-- JS Files -->
 <script src="<?php echo 'templates/' . $this->template . '/js/vendor/jquery.js'; ?>"></script>
 <script src="<?php echo 'templates/' . $this->template . '/js/foundation.min.js'; ?>"></script>
 <script src="<?php echo 'templates/' . $this->template . '/js/vendor/modernizr.js'; ?>"></script>
 <script src="<?php echo 'templates/' . $this->template . '/js/theme.js'; ?>"></script>
+<script class="<?php echo 'templates/' . $this->template . '/js/theme.js'; ?>"> src="#" </script>
+<script src="<?php echo 'templates/' . $this->template . '/js/accessibility.js'; ?>"></script>
+
+<script>
+  
+  
+
+
+
+</script>
+
 </body>
 </html>
