@@ -57,8 +57,14 @@ Known Bugs:
 - remove top and bottom panel container when no module exists
 - remove agency footer container when no module exists
 
-**08/20/2015**
+**2015-08-20**
 - Added new accessibility features
   - High Contrast Mode
   - Grayscale Mode
   - Toggle font size
+
+**2015-09-23**
+- Removed Toggle font size
+- Added accessibility statement pop-up
+- Redesigned the Accessibility Widget and move it to the right
+- Restyled the Breadcrumbs by removing the slash(/) after the "YOU ARE HERE".

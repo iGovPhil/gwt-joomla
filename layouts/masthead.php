@@ -1,11 +1,12 @@
-<?php $logoPosition = ($this->params->get('logoPosition') == 0 ? 'text-align:left' : 'display:block; margin: 0 auto; text-align:center;');
+<?php 
 
-	if ($this->params->get('agencyLogo'))
-	{
+
+
+$logoPosition = ($this->params->get('logoPosition') == 0 ? 'text-align:left' : 'display:block; margin: 0 auto; text-align:center;');
+
+	if ($this->params->get('agencyLogo')){
 		$logo = '<a href="'.$this->baseurl.'"><img src="'.$agencyLogo.'" style="'.$logoPosition.';" /></a>';
-	}
-	else
-	{
+	}else{
 		$logo = '<a href="'.$this->baseurl.'"><h1 style="'.$logoPosition.';">Agency Logo</h1></a>';
 	}
 ?>

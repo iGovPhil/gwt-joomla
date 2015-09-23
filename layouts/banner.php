@@ -6,66 +6,16 @@
 	<?php if ($this->countModules('banner')): ?>
 	
 	<ul class="example-orbit" data-orbit data-options="">
-		
-          <?php if($imgUrl1){
-			echo '<li><a href="'.$imgLink1.'"><img src="'.$imgUrl1.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt1.'</div></a></li>';
+		/*** TODO: create a function for this ***/
+	<?php
+	for($x=0;$x<=10;$x++){
+		if($imgUrl[$x]){
+		echo '<li><a href="'.$imgLink[$x].'"><img src="'.$imgUrl[$x].'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt1.'</div></a></li>';
 		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl2){
-			echo '<li><a href="'.$imgLink2.'"><img src="'.$imgUrl2.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt2.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl3){
-			echo '<li><a href="'.$imgLink3.'"><img src="'.$imgUrl3.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt3.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl4){
-			echo '<li><a href="'.$imgLink4.'"><img src="'.$imgUrl4.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt4.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl5){
-			echo '<li><a href="'.$imgLink5.'"><img src="'.$imgUrl5.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt5.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl6){
-			echo '<li><a href="'.$imgLink6.'"><img src="'.$imgUrl6.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt6.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl7){
-			echo '<li><a href="'.$imgLink7.'"><img src="'.$imgUrl7.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt7.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl8){
-			echo '<li><a href="'.$imgLink8.'"><img src="'.$imgUrl8.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt8.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl9){
-			echo '<li><a href="'.$imgLink9.'"><img src="'.$imgUrl9.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt9.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
-		
-         <?php if($imgUrl10){
-			echo '<li><a href="'.$imgLink10.'"><img src="'.$imgUrl10.'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt10.'</div></a></li>';
-		} else {
-			echo '';
-		} ?>
+		echo '';
+		} 
+	}
+	?>
 	</ul>
 	
     <?php else: ?>
@@ -99,66 +49,16 @@
 				 <div class="large-8 medium-8 columns">
 					 <div class="orbit-container">
 						 <ul class="example-orbit" data-orbit data-options="">
-							 
-		                    <?php if($imgUrl1){
-								echo '<li><a href="'.$imgLink1.'"><img src="'.$imgUrl1.'" /><div class="orbit-caption">'.$imgExcerpt1.'</div></a></li>';
-							} else {
+
+						 	<?php
+							for($x=0;$x<=10;$x++){
+								if($imgUrl[$x]){
+								echo '<li><a href="'.$imgLink[$x].'"><img src="'.$imgUrl[$x].'" /><div class="orbit-caption">'.$imgExcerpt[$x].'</div></a></li>';
+								} else {
 								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl2){
-								echo '<li><a href="'.$imgLink2.'"><img src="'.$imgUrl2.'" /><div class="orbit-caption">'.$imgExcerpt2.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl3){
-								echo '<li><a href="'.$imgLink3.'"><img src="'.$imgUrl3.'" /><div class="orbit-caption">'.$imgExcerpt3.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl4){
-								echo '<li><a href="'.$imgLink4.'"><img src="'.$imgUrl4.'" /><div class="orbit-caption">'.$imgExcerpt4.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl5){
-								echo '<li><a href="'.$imgLink5.'"><img src="'.$imgUrl5.'" /><div class="orbit-caption">'.$imgExcerpt5.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl6){
-								echo '<li><a href="'.$imgLink6.'"><img src="'.$imgUrl6.'" /><div class="orbit-caption">'.$imgExcerpt6.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl7){
-								echo '<li><a href="'.$imgLink7.'"><img src="'.$imgUrl7.'" /><div class="orbit-caption">'.$imgExcerpt7.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl8){
-								echo '<li><a href="'.$imgLink8.'"><img src="'.$imgUrl8.'" /><div class="orbit-caption">'.$imgExcerpt8.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl9){
-								echo '<li><a href="'.$imgLink9.'"><img src="'.$imgUrl9.'" /><div class="orbit-caption">'.$imgExcerpt9.'</div></a></li>';
-							} else {
-								echo '';
-							} ?>
-					
-		                    <?php if($imgUrl10){
-								echo '<li><a href="'.$imgLink10.'"><img src="'.$imgUrl10.'" /><div class="orbit-caption">'.$imgExcerpt10.'</div></a></li>';
-							} else {
-								echo '';
-							} ?> 
+								} 
+							}
+							?>
 							 
 						 </ul> 
 					  </div>
@@ -205,65 +105,15 @@
 			<div class="orbit-container">
 				<ul class="example-orbit" data-orbit data-options="">
 					
-                    <?php if($imgUrl1){
-						echo '<li><a href="'.$imgLink1.'"><img src="'.$imgUrl1.'" /><div class="orbit-caption">'.$imgExcerpt1.'</div></a></li>';
-					} else {
+					<?php
+					for($x=0;$x<=10;$x++){
+						if($imgUrl[$x]){
+						echo '<li><a href="'.$imgLink[$x].'"><img src="'.$imgUrl[$x].'" /><div class="orbit-caption">'.$imgExcerpt[$x].'</div></a></li>';
+						} else {
 						echo '';
-					} ?>
-					
-                    <?php if($imgUrl2){
-						echo '<li><a href="'.$imgLink2.'"><img src="'.$imgUrl2.'" /><div class="orbit-caption">'.$imgExcerpt2.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl3){
-						echo '<li><a href="'.$imgLink3.'"><img src="'.$imgUrl3.'" /><div class="orbit-caption">'.$imgExcerpt3.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl4){
-						echo '<li><a href="'.$imgLink4.'"><img src="'.$imgUrl4.'" /><div class="orbit-caption">'.$imgExcerpt4.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl5){
-						echo '<li><a href="'.$imgLink5.'"><img src="'.$imgUrl5.'" /><div class="orbit-caption">'.$imgExcerpt5.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl6){
-						echo '<li><a href="'.$imgLink6.'"><img src="'.$imgUrl6.'" /><div class="orbit-caption">'.$imgExcerpt6.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl7){
-						echo '<li><a href="'.$imgLink7.'"><img src="'.$imgUrl7.'" /><div class="orbit-caption">'.$imgExcerpt7.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl8){
-						echo '<li><a href="'.$imgLink8.'"><img src="'.$imgUrl8.'" /><div class="orbit-caption">'.$imgExcerpt8.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl9){
-						echo '<li><a href="'.$imgLink9.'"><img src="'.$imgUrl9.'" /><div class="orbit-caption">'.$imgExcerpt9.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
-					
-                    <?php if($imgUrl10){
-						echo '<li><a href="'.$imgLink10.'"><img src="'.$imgUrl10.'" /><div class="orbit-caption">'.$imgExcerpt10.'</div></a></li>';
-					} else {
-						echo '';
-					} ?>
+						} 
+					}
+					?>
 				 
 				</ul>
 			</div>
@@ -292,7 +142,3 @@
     <?php endif; ?>
 
 <?php endif?>
-
-
-
-

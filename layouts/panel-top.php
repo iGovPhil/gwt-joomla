@@ -1,13 +1,3 @@
-<?php
-/**
- * @file
- * panel top region
- */
-?>
-<?php if($this->countModules('panel-top-1') || 
-	$this->countModules('panel-top-2') ||
-	$this->countModules('panel-top-3') ||
-	$this->countModules('panel-top-4')): ?>
 <!-- modules -->
 <div id="panel-top" class="row">
 
@@ -133,4 +123,3 @@ $class_top4 .= ' columns';
 
 </div>
 <!-- end modules -->
-<?php endif; ?>
