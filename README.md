@@ -68,3 +68,6 @@ Known Bugs:
 - Added accessibility statement pop-up
 - Redesigned the Accessibility Widget and move it to the right
 - Restyled the Breadcrumbs by removing the slash(/) after the "YOU ARE HERE".
+
+**2015-11-11**
+- updated standard footer link to github.io CDN
