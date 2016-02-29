@@ -4,20 +4,7 @@
 <div id="banner" style="margin: 0; padding: 0;">
 
 	<?php if ($this->countModules('banner')): ?>
-	
-	<ul class="example-orbit" data-orbit data-options="">
-		/*** TODO: create a function for this ***/
-	<?php
-	for($x=0;$x<=10;$x++){
-		if($imgUrl[$x]){
-		echo '<li><a href="'.$imgLink[$x].'"><img src="'.$imgUrl[$x].'" class="fullwidth" /><div class="orbit-caption">'.$imgExcerpt1.'</div></a></li>';
-		} else {
-		echo '';
-		} 
-	}
-	?>
-	</ul>
-	
+		<jdoc:include type="modules" name="banner" style="xhtml" />	
     <?php else: ?>
   
     <div class="row">
@@ -47,29 +34,14 @@
 		<div class="large-12 columns">
 			 <div class="row collapse bg-banner">
 				 <div class="large-8 medium-8 columns">
-					 <div class="orbit-container">
-						 <ul class="example-orbit" data-orbit data-options="">
-
-						 	<?php
-							for($x=0;$x<=10;$x++){
-								if($imgUrl[$x]){
-								echo '<li><a href="'.$imgLink[$x].'"><img src="'.$imgUrl[$x].'" /><div class="orbit-caption">'.$imgExcerpt[$x].'</div></a></li>';
-								} else {
-								echo '';
-								} 
-							}
-							?>
-							 
-						 </ul> 
-					  </div>
-				  </div>
-				  
-				  <div class="large-4 medium-4 columns" <?php echo $featuredBackground; ?>>
-					  <div id="featured01">
-						  <jdoc:include type="modules" name="banner-featured" style="xhtml" />
-					  </div>
-				  </div>
-			  
+				 	<div id="banners">
+				 		<jdoc:include type="modules" name="banner" style="xhtml" />
+				 	</div>
+				 <div class="large-4 medium-4 columns" <?php echo $featuredBackground;?> >
+					<div id="featured01">
+						<jdoc:include type="modules" name="banner-featured" style="xhtml" />
+					</div>
+				 </div>
 			  </div>
 		  </div>
 	  </div>
@@ -97,48 +69,29 @@
 <?php else: ?>
 	
 <?php if ($this->countModules('banner')): ?>
-	
 <div id="banner" <?php echo $bannerBackground; ?>>
 		
 	<div class="row">
 		<div class="large-12 columns">
-			<div class="orbit-container">
-				<ul class="example-orbit" data-orbit data-options="">
-					
-					<?php
-					for($x=0;$x<=10;$x++){
-						if($imgUrl[$x]){
-						echo '<li><a href="'.$imgLink[$x].'"><img src="'.$imgUrl[$x].'" /><div class="orbit-caption">'.$imgExcerpt[$x].'</div></a></li>';
-						} else {
-						echo '';
-						} 
-					}
-					?>
-				 
-				</ul>
+			<div id="banners">
+				<jdoc:include type="modules" name="banner" style="xhtml" />
 			</div>
 		</div>
 	</div>	
 </div>
-
-    <?php else: ?>
-		
+<?php else: ?>
 		<div id="banner" style="margin: 0; padding: 0;">
 			<div class="row" <?php echo $bannerBackground; ?>>
 				<div class="large-9 columns">
 					<header>
 						<?php if ($option == 'com_content' && $view == 'article'): ?>
-							
-						<?php if ($article_title): ?>
-							<h1 class="entry-title"><?php echo $article_title;  ?></h1>
-						<?php endif ?>
-							
+							<?php if ($article_title): ?>
+								<h1 class="entry-title"><?php echo $article_title;  ?></h1>
+							<?php endif ?>
 						<?php endif ?>
 					</header>
 				</div>
 			</div>
 		</div>
-    
     <?php endif; ?>
-
-<?php endif?>
+<?php endif; ?>

@@ -18,7 +18,7 @@
   </ul>
 </div>
 
-<div id="accessibility-widget">
+<nav id="accessibility-widget">
   	<input id="tmp-link" type="hidden" data-link="<?php echo JUri::base() .'templates/' . $this->template ?>">
     <ul>
       <li><a href="#" id="accessibility-mode" title="Accessibility Menu"><span class="offscreen">Toggle Accessibility Menu</span></a></li>
@@ -26,7 +26,7 @@
       <li><a href="#" id="accessibility-contrast" class="toggle-contrast" title="Toggle High Contrast"><span class="offscreen">Toggle High Contrast</span></a></li>
       <li><a href="#" id="accessibility-grayscale" class="toggle-grayscale" title="Toggle Grey Scale"><span class="offscreen">Toggle Grayscale</span></a></li>      
     </ul>
-</div>
+</nav>
 
 <div id="accessibility-statement-content" title="Accessibility Statement" role="dialog">
     <textarea class="statement-textarea" readonly>

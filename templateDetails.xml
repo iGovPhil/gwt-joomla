@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.6.1" type="template" client="site">
-<name>gwt-joomla-3.6.1</name>
-<version>3.6.1</version>
-<creationDate>Dec 2014</creationDate>
+<extension version="2.0" type="template" client="site">
+<name>gwt-joomla-2.0</name>
+<version>2.0</version>
+<creationDate>Feb 2016</creationDate>
 <author>iGov Philippines</author>
 <authorEmail>helpdesk@i.gov.ph</authorEmail>
 <authorURL>http://i.gov.ph</authorURL>
 <copyright>All content is in the public domain unsless otherwise stated.</copyright>
 <license>GNU General Public License version 2 or later</license>
 <description>Government Web Template for Joomla 3.x, version master</description>
+
 <files>
   <filename>index.php</filename>
   <filename>templateDetails.xml</filename>
@@ -24,6 +25,7 @@
   <folder>html</folder>
   <folder>layouts</folder>
 </files>
+
 <positions>
 	<position>topbar-left</position>
   <position>topbar-right</position>
@@ -51,49 +53,61 @@
   <position>footer-3</position>
   <position>footer-4</position>
 </positions>
+
 <config>
   <fields name="params">
-    <fieldset name="themeOptions" label="Theme Options">
-      <field name="agencyLogo" class="" type="media" default=""
-        label="Header Logo Upload"
-        description="Upload the image of your logo with agency name here" />
-  		<field name="logoPosition"
-  			type="radio"
-  			class="btn-group"
-  			default="0"
-  			label="Header Logo Position"
-  			description="Select Logo Position">
-  			<option value="0">LEFT</option>
-  			<option value="1">CENTER</option>
+    <fieldset name="HeaderBannerOptions" label="Header and Banner Options">
+      
+      <!-- Header Logo Options -->
+      <field name="HeaderTypeLogo" type="radio" class="btn-group" default="0"
+        label="Header Logo Type" description="Select the type of Agency Logo">
+        <option value="0">Image Only</option>
+        <option value="1">Image with Text</option>
+      </field>
+      <field name="HeaderLogo" class="" type="media" default="" label="Header Logo Upload"
+        description="Upload the image of your Agency logo in 100x100" />
+      <field name="HeaderName" class="" type="text" default="" 
+        label="Header Logo Name" description="Input the name of your agency" />
+      <field name="HeaderTagline" class="" type="text" default=""
+        label="Header Logo Tagline" description="Input an additional tagline for your agency" />
+      <field name="HeaderFontFamily" type="radio" class="btn-group" default="0" 
+        label="Header Font Type" description="Select Font Type">
+          <option value="0">San Serif</option>
+          <option value="1">Serif</option>
+      </field>
+      <field name="HeaderTextColor" class="" type="color" default="#000" 
+        label="Header Text Color" description="Input an additional tagline for your agency" />
+      <field name="HeaderLogoFull" class="" type="media" default=""
+        label="Header Full Upload" description="Upload the image of your logo with agency name" />
+      <field name="HeaderLogoPosition" type="radio" class="btn-group" default="0" 
+        label="Header Logo Position" description="Select Logo Position">
+    			<option value="0">LEFT</option>
+    			<option value="1">CENTER</option>
   		</field>
-			
-      <field name="headerBackgroundColor" class="" type="color" default="#0D4E86"
-        label="Header Background Color"
-        description="Enter the hex code for your header background color." />
-
-      <field name="headerBackgroundImage" class="" type="media" default=""
-        label="Header Background Image"
-        description="Enter your header's background image here." />
-		  
-  		<field name="headerColumns" type="radio" class="btn-group" default="0" label="Header Columns" description="Select number of columns for header.">
-  			<option value="0">1 COL</option>
-  			<option value="1">2 COLS</option>
-  			<option value="2">3 COLS Left</option>
-			 <option value="3">3 COLS Right</option>
+      <field name="HeaderLogoAlt" class="" type="text" default="" 
+        label="Header Logo Alt" description="Input the Alt for your image logo" />
+      <field name="HeaderBgColor" class="" type="color" default="#0D4E86"
+        label="Header Background Color" description="Enter the hex code for your header background color." />
+      <field name="HeaderBgImage" class="" type="media" default="" 
+        label="Header Background Image" description="Enter your header's background image here." />
+  		<field name="HeaderColumns" type="radio" class="btn-group" default="0" 
+          label="Header Columns" description="Select number of columns for header.">
+        		<option value="0">1 COL</option>
+        		<option value="1">2 COLS</option>
+        		<option value="2">3 COLS Left</option>
+      			<option value="3">3 COLS Right</option>
   		</field>
-          
-      <field name="bannerBackgroundColor" class="" type="color" default="#0D4E86"
+      
+      <!-- Banner -->
+      <field name="bannerBgColor" class="" type="color" default="#0D4E86"
         label="Banner Background Color"
         description="Enter the hex code for your banner background color." />
-		  
-		  <field name="bannerBackgroundImage" class="" type="media" default="" label="Banner Background Image" description="Enter your banner's background image here." />
-		
+		  <field name="bannerBgImage" class="" type="media" default="" label="Banner Background Image" description="Enter your banner's background image here." />
   		<field name="bannerPosition" type="radio" class="btn-group" default="0" label="Banner Position" description="Select banner position">
   			<option value="0">Standard 1 COL</option>
   			<option value="1">Standard 2 COLS</option>
   			<option value="2">Full Width</option>
   		</field>
-		
       <field name="bannerFeaturedColor" class="" type="color" default=""
         label="Banner Featured Content Color"
         description="Enter the hex code for your banner's featured content background color." />
@@ -101,23 +115,85 @@
       <field name="bannerFeaturedImage" class="" type="media" default=""
         label="Banner Featured Content Background Image"
         description="Enter your banner's featured content background image here." />
-		
+    </fieldset>
+
+    <fieldset name="ContentOptions" label="Content Options">
+		  <!-- SideBar/Content Options -->
   		<field name="sidebarPosition" type="radio" class="btn-group" default="3" label="Sidebar Position" description="Select sidebar position">
-  			<option value="0">LEFT</option>
+  			<option value="0">NO SIDEBAR</option>
+        <option value="1">LEFT</option>
+        <option value="2">RIGHT</option>
         <option value="3">BOTH</option>
-  			<option value="1">RIGHT</option>
-  			<option value="2">NO SIDEBAR</option>
   		</field>
-		
-      <!-- TODO: must create a pst module -->
+
+      <!-- Transparency --> 
+      <field name="transparencyPosition" type="radio" class="btn-group" default="0" label="Transparency Position" description="Position of the Transparency Seal.">
+        <option value="1">LEFT</option>
+        <option value="0">NONE</option>
+        <option value="2">RIGHT</option>
+      </field>
+      <field name="transparencyURL" class="" type="text" default="#" 
+        label="Transparency Page URL" description="Input the URL of the Transparency Page" />
+
+      <!-- PST -->
       <field name="pstPosition" type="radio" class="btn-group" default="0" label="PST Position" description="Position of the Philippine Standard Module. If none, must have a replacement PST module.">
         <option value="1">LEFT</option>
         <option value="0">NONE</option>
         <option value="2">RIGHT</option>
       </field>
-      <field name="pstHeight" label="PST height" description="Height of the pst module" type="text" default="40" />
-    </fieldset>  
+      
+      <!-- Contents -->
+      <field name="contentBorder" type="radio" class="btn-group" default="0" 
+        label="Content Border" description="Insert Border to Content">
+        <option value="0">No Border</option>
+        <option value="1">Full Border</option>
+        <option value="2">Border Top Only</option>
+        <option value="3">Border Bottom Only</option>
+      </field>
+      <field name="contentBorderWt" type="list" class="btn-group" default="1" 
+        label="Content Border Weight" description="Border Weight">
+        <option value="1">1px</option>
+        <option value="2">2px</option>
+        <option value="3">3px</option>
+        <option value="4">4px</option>
+        <option value="5">5px</option>
+      </field>
+      <field name="contentBorderRd" type="list" class="btn-group" default="0" 
+        label="Content Border Radius" description="Border Radius">
+        <option value="0">0px</option>
+        <option value="2">2px</option>
+        <option value="4">4px</option>
+        <option value="6">6px</option>
+        <option value="8">8px</option>
+        <option value="10">10px</option>
+        <option value="12">12px</option>
+        <option value="14">14px</option>
+        <option value="16">16px</option>
+        <option value="18">18px</option>
+        <option value="20">20px</option>
+      </field>
+      <field name="contentBorderColor" type="color" class="" default="" 
+        label="Content Border Color" description="Border Color"/>
+      <field name="contentHeaderFontSize" type="radio" class="btn-group" default="0" 
+        label="Content Header Font Size" description="Change the Header Font Size of Content">
+        <option value="1">Smaller</option>
+        <option value="0">Normal</option>
+        <option value="2">Larger</option>
+      </field>
+      <field name="contentBgColor" type="color" class="" default="#f2f2f2" 
+        label="Content Background Color" description="Change Content Background Color"/>
+      
+      <!-- Footer -->
+      <field name="agencyFooterBgColor" type="color" class="" default="#e9e9e9" 
+        label="Agency Footer's Background Color" description="Change the Agency Footer's Background Color"/>
         
+    </fieldset>  
+
+
+
+
+
+<!--        
     <fieldset name="sliderOptions" label="Image Slider">
       <field name="imgUrl1" label="Image 1" description="Image 1" type="media" />
       <field name="imgExcerpt1" label="Caption 1" description="Caption 1" type="text" />
@@ -160,6 +236,7 @@
       <field name="imgLink10" label="Link 10" description="Link 10" type="text" />
 
     </fieldset>
+-->
 
     <fieldset name="accessibility" label="Accessibility">
       <!-- TODO: test shortcut for mac safari, mac chrome -->

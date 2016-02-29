@@ -1,0 +1,143 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+
+
+/* Additional styles for rslider*/
+
+.rslides_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+  }
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides .caption {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 0.875rem;
+  text-shadow: none;
+  color: #fff;
+  background: #000;
+  background: rgba(51,51,51, .8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+  }
+
+.rslides_nav {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  cursor: hand;
+  z-index: 100;
+  text-indent: -9999px;
+  text-decoration: none;
+  height: 60px;
+  width: 35px;
+  background: url("../images/responsiveslides/slider-sprites.png") no-repeat 0 0;
+  margin-top: -40px;
+  }
+
+.rslides_nav.next {
+  right: 0;
+  background-position: -35px 0;
+}
+.rslides_nav.prev {
+  left: 0;
+}
+.rslides_nav.next:hover {
+  background-position: -35px -60px;
+}
+.rslides_nav.prev:hover {
+  background-position: 0 -60px;
+}
+.rslides_tabs{
+  text-align: center;
+  padding-top: 0;
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-left: 0;
+  //position: absolute;
+  width: 100%;
+  bottom: -23px;
+}
+.rslides_tabs li{
+  display: inline-block;
+  padding: 0 3px;
+}
+.rslides_tabs li a{
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url("../images/responsiveslides/bg_control_nav.png") no-repeat scroll 0px 0px transparent;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+.rslides_tabs li a:hover{
+  background-position: 0 -13px;
+}
+.rslides_tabs li.rslides_here a{
+  background-position: 0 -26px;
+}

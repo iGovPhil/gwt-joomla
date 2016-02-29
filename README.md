@@ -69,5 +69,28 @@ Known Bugs:
 - Redesigned the Accessibility Widget and move it to the right
 - Restyled the Breadcrumbs by removing the slash(/) after the "YOU ARE HERE".
 
-**2015-11-11**
-- updated standard footer link to github.io CDN
+**2016-02-29**
+- Use the Joomla Banner as the Banner Slider
+- Added Header and Banner Customization through the Template's Header and Banner Option
+	- Header logo type
+	- Header Logo Image with text option 
+		* logo name
+		* tagline
+		* text color
+		* image logo alt
+- Added Content Customization through the Template's Content Option
+	- Added Transparency Seal Logo
+	- Content panel and module border customization 
+		* border weight
+		* border color
+		* border radius
+		* border color
+	- Content Header Font Size
+	- Content panel and module background color change option
+	- Agency Footer's background Color change option
+- Change Version Branding to Pansit version 2.0
+- Removed the Accessibility Add-on
+	- High Contrast Mode
+	- Grayscale Mode
+	- Toggle font size
+

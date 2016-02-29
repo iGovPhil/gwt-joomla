@@ -27,7 +27,6 @@ function eraseCookie(name) {
 
 
 jQuery(function($) {
-
   // Accessibility Widget //
   var tmp_link = $('#tmp-link').attr('data-link');
   var lc = tmp_link+"/css/a11y-contrast.css";
@@ -134,14 +133,15 @@ jQuery(function($) {
 
   // foundation initialization //
   $(document).foundation();
-  $(document).foundation('section').foundation('orbit', {
-    animation: 'fade',
-    timer_speed: 5000,
-    pause_on_hover: true,
-    resume_on_mouseout: true,
-    bullets: false,
-    variable_height: false
-  });
+
+  // $(document).foundation('section').foundation('orbit', {
+  //   animation: 'fade',
+  //   timer_speed: 5000,
+  //   pause_on_hover: true,
+  //   resume_on_mouseout: true,
+  //   bullets: false,
+  //   variable_height: false
+  // });
 
   // back to top scroll
   var offset = 220;
@@ -165,6 +165,16 @@ jQuery(function($) {
   });
   $('#accessibility-links ul li a').blur(function(){
     $(this).parent().removeClass('access-focus');
-  })
+  });
+
+  // using responsiveslider
+  $('.rsslides').responsiveSlides({
+    auto: true,
+    pager: true,
+    nav: true,
+    pauseControls: true,
+    speed: 500,
+    namespace: 'rslides',
+  });
 
 });

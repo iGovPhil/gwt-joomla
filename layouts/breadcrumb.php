@@ -1,5 +1,7 @@
-<!--auxiliary menu-->
-<?php if ($this->countModules('auxiliary-menu')): ?>
+<?php //echo $this->countModules('auxiliary-menu'); ?>
+
+
+<?php if ($this->countModules('auxiliary-menu') > 0): ?>
 	<div id="auxiliary">
 		<div class="row">
 			<div class="large-12 columns">
@@ -20,9 +22,6 @@
 	</div>
 <?php endif ?>
 
-<!-- end auxiliary menu-->
-
-<!-- breadcrumb -->
 <?php if ($this->countModules('breadcrumbs')): ?>
 	<div id="breadcrumbs">
 		<div class="row">
@@ -32,4 +31,3 @@
 		</div>
 	</div>
 <?php endif ?>
-<!-- end breadcrumb -->
