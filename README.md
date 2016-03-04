@@ -16,6 +16,9 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
  - Est. release date: April 20, 2016
 
 ## CHANGE LOGS
+**2016-03-04**
+- Rebranding to GWT-Joomla! P2 version 2.0.0
+
 **2016-02-29**
 - Use the Joomla Banner as the Banner Slider
 - Added Header and Banner Customization through the Template's Header and Banner Option
