@@ -161,15 +161,25 @@
       <field name="contentBorderRd" type="list" class="btn-group" default="0" 
         label="Content Border Radius" description="Border Radius">
         <option value="0">0px</option>
+        <option value="1">1px</option>
         <option value="2">2px</option>
+        <option value="3">3px</option>
         <option value="4">4px</option>
+        <option value="5">5px</option>
         <option value="6">6px</option>
+        <option value="7">7px</option>
         <option value="8">8px</option>
+        <option value="9">9px</option>
         <option value="10">10px</option>
+        <option value="11">11px</option>
         <option value="12">12px</option>
+        <option value="13">13px</option>
         <option value="14">14px</option>
+        <option value="15">15px</option>
         <option value="16">16px</option>
+        <option value="17">17px</option>
         <option value="18">18px</option>
+        <option value="19">19px</option>
         <option value="20">20px</option>
       </field>
       <field name="contentBorderColor" type="color" class="" default="" 
@@ -189,57 +199,7 @@
         
     </fieldset>  
 
-
-
-
-
-<!--        
-    <fieldset name="sliderOptions" label="Image Slider">
-      <field name="imgUrl1" label="Image 1" description="Image 1" type="media" />
-      <field name="imgExcerpt1" label="Caption 1" description="Caption 1" type="text" />
-      <field name="imgLink1" label="Link 1" description="Link 1" type="text" />
-			
-      <field name="imgUrl2" label="Image 2" description="Image 1" type="media" />
-      <field name="imgExcerpt2" label="Caption 2" description="Caption 2" type="text" />
-      <field name="imgLink2" label="Link 2" description="Link 2" type="text" />
-          
-      <field name="imgUrl3" label="Image 3" description="Image 3" type="media" />
-      <field name="imgExcerpt3" label="Caption 3" description="Caption 3" type="text" />
-      <field name="imgLink3" label="Link 3" description="Link 3" type="text" />
-          
-      <field name="imgUrl4" label="Image 4" description="Image 4" type="media" />
-      <field name="imgExcerpt4" label="Caption 4" description="Caption 4" type="text" />
-      <field name="imgLink4" label="Link 4" description="Link 4" type="text" />
-      
-      <field name="imgUrl5" label="Image 5" description="Image 5" type="media" />
-      <field name="imgExcerpt5" label="Caption 5" description="Caption 5" type="text" />
-      <field name="imgLink5" label="Link 5" description="Link 5" type="text" />
-          
-      <field name="imgUrl6" label="Image 6" description="Image 6" type="media" />
-      <field name="imgExcerpt6" label="Caption 6" description="Caption 6" type="text" />
-      <field name="imgLink6" label="Link 6" description="Link 6" type="text" />
-  	
-  	  <field name="imgUrl7" label="Image 7" description="Image 7" type="media" />
-      <field name="imgExcerpt7" label="Caption 7" description="Caption 7" type="text" />
-      <field name="imgLink7" label="Link 7" description="Link 7" type="text" />
-      
-      <field name="imgUrl8" label="Image 8" description="Image 8" type="media" />
-      <field name="imgExcerpt8" label="Caption 8" description="Caption 8" type="text" />
-      <field name="imgLink8" label="Link 8" description="Link 8" type="text" />
-      
-      <field name="imgUrl9" label="Image 9" description="Image 9" type="media" />
-      <field name="imgExcerpt9" label="Caption 9" description="Caption 9" type="text" />
-      <field name="imgLink9" label="Link 9" description="Link 9" type="text" />
-	
-      <field name="imgUrl10" label="Image 10" description="Image 10" type="media" />
-      <field name="imgExcerpt10" label="Caption 10" description="Caption 10" type="text" />
-      <field name="imgLink10" label="Link 10" description="Link 10" type="text" />
-
-    </fieldset>
--->
-
-    <fieldset name="accessibility" label="Accessibility">
-      <!-- TODO: test shortcut for mac safari, mac chrome -->
+    <!-- <fieldset name="accessibility" label="Accessibility">
       <field type="note" label="Shortcut Keys Combination Activation" description="Combination keys used for each browser." />
       <field type="note" description="Chrome for Linux press (Alt+Shift+shortcut_key)" />
       <field type="note" description="Chrome for Windows press (Alt+shortcut_key)" />
@@ -253,7 +213,8 @@
   		<field name="accessFeedback" class="" type="text" default="" label="Accessibility Access Key Site (Alt+K): Feedback" description="Enter link for search accesskey (K)" />
   		<field name="accessSiteMap" class="" type="text" default="#footer" label="Accessibility Access Key Site (Alt+M): Site Map" description="Enter link for search accesskey (M)" />
   		<field name="accessSearch" class="" type="text" default="" label="Accessibility Access Key Site (Alt+S): Search" description="Enter link for search accesskey (S)" />
-      </fieldset>
+      </fieldset> -->
+
     </fields>
   </config>
 </extension>

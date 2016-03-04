@@ -194,7 +194,7 @@ body.contrast #accessibility-widget ul li a#accessibility-statement span {
 #footer li {list-style: block;}
 
 .top-bar{ background: #f7f7f7; line-height: 58px; height: 58px; }
-.top-bar .name h1 a{ color: #000; background: #f7f7f7; line-height: 58px; height: 58px; font-size: 1.583rem; }
+.top-bar .name h1 a{ color: #000; background: #f7f7f7; line-height: 58px; height: 58px; font-size: 1.1875rem; }
 .top-bar-section li.active a, .top-bar-section li.active:not(.has-form) a:not(.button):hover{ background: #ededed; color: #000; border-bottom: solid 1px #ebebeb; }
 .top-bar .toggle-topbar.menu-icon a{ color: #000; }
 .top-bar .toggle-topbar.menu-icon a::after{ color: #000; box-shadow: 0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000; }
@@ -233,7 +233,7 @@ input[type="text"] {height: 1.875rem;}
 /* TODO: must add a auxillary menu dropdown menu */
 /** aux-nav-btn **/
 .aux-nav-btn-container{ height: 58px; background: #f7f7f7; overflow: auto; }
-#aux-nav-btn{ float: right; margin: 0; background: #f7f7f7; color: #000; height: 34px; line-height: 33px; padding: 0; padding-right: 25px; margin-top: 10px; margin-right: 18px; margin-bottom: 14px; font-weight: bold; text-transform: uppercase; font-size: 1.0833rem; }
+#aux-nav-btn{ float: right; margin: 0; background: #f7f7f7; color: #000; height: 34px; line-height: 33px; padding: 0; padding-right: 25px; margin-top: 10px; margin-right: 18px; margin-bottom: 14px; font-weight: bold; text-transform: uppercase; font-size: 0.8125rem; }
 #aux-nav-btn::after{ content: ""; position: absolute; right: 0; display: block; width: 16px; top: 0; height: 0; color: #000; box-shadow: 0 10px 0 1px #000, 0 16px 0 1px #000, 0 22px 0 1px #000; }
 #aux-nav li a:hover{ background: #ededed; }
 #aux-nav ul li.has-dropdown{ }
@@ -250,7 +250,7 @@ input[type="text"] {height: 1.875rem;}
 
 /* time */
 /*.time {background: #333; border-color: #222; }*/
-.time .pst {font-size: 1.0833rem;}
+.time .pst {font-size: 0.8125rem;}
 
 /* article info and pagination */
 .print-icon, .email-icon, .edit-icon {font-size: 0.75rem; float: left; text-transform: uppercase;}
@@ -278,7 +278,7 @@ h4.newsflash-title {border-top: 1px solid #DDD; padding-top: 5px;}
 
 /* login form, edit */
 #login-form {border: 1px solid #D8D8D8; padding: 15px; background: #F2F2F2;}
-#login-form li {font-size: .875rem;}
+#login-form li {font-size: 0.875rem;}
 #login-form .btn {padding: .75rem 1.5rem .75rem;}
 #jform_publish_up_img, #jform_publish_down_img {display: none;}
 #editor-xtd-buttons {padding: 10px 0; float: left;}
@@ -309,7 +309,7 @@ p.img_caption {font-size: 0.75rem;}
 #content .pull-left{ float: left; }
 #content .pull-right{ float: right; }
 
-#back-to-top { position: fixed; bottom: 2em; right: 0px; text-decoration: none; color: #ffffff; background-color: #111111; border-top-left-radius: 5px; border-bottom-left-radius: 5px; font-size: 1rem; padding: 1em; display: none; }
+#back-to-top { position: fixed; bottom: 2em; right: 0px; text-decoration: none; color: #ffffff; background-color: #111111; border-top-left-radius: 5px; border-bottom-left-radius: 5px; font-size: 0.75rem; padding: 1em; display: none; }
 
 /**
  *
@@ -318,7 +318,7 @@ p.img_caption {font-size: 0.75rem;}
     #aux-nav{  left: 0 !important;  width: 100% !important; position: static !important; height: auto;  overflow: auto;  border-bottom: 1px solid #D8D8D8; }
     #aux-nav section > ul{  width: 100%;  margin: 0; height: auto; }
     #aux-nav ul > li{  width: 100%;  display: block; }
-    #aux-nav ul li > a{  width: 100%;  display: block;  line-height: 58px;  background: #f7f7f7;  color: #000;  font-size: 1.0833rem;  padding: 0 20px;  position: relative;  border-top: 1px solid #ebebeb; }
+    #aux-nav ul li > a{  width: 100%;  display: block;  line-height: 58px;  background: #f7f7f7;  color: #000;  font-size: 0.8125rem;  padding: 0 20px;  position: relative;  border-top: 1px solid #ebebeb; }
     #aux-nav ul li a:hover{  background: #EDEDED; }
     #aux-nav ul li.has-dropdown > a:after{  content: "";  display: block;  width: 0;  height: 0;  border: inset 5px;  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;  border-top-style: solid;  margin-top: -2.5px;  top: 22.5px;
     margin-top: 1.5px;  right: 30px;  position: absolute; }
@@ -331,13 +331,13 @@ p.img_caption {font-size: 0.75rem;}
     .top-bar-section .has-dropdown > a:after{  border: inset 5px;  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;  border-top-style: solid;  margin-top: 2.5px; }
     .top-bar li ul{ -webkit-box-shadow: 6px 10px 10px -6px rgba(0,0,0,0.5); -moz-box-shadow: 6px 10px 10px -6px rgba(0,0,0,0.5); box-shadow: 6px 10px 10px -6px rgba(0,0,0,0.5); }
     #aux-nav{  position: static !important;  width: auto !important;  top: auto !important;  left: auto !important;
-    background: #f7f7f7;  color: #000;  line-height: 58px;  font-size: 1.0833rem; }
+    background: #f7f7f7;  color: #000;  line-height: 58px;  font-size: 0.8125rem; }
     #aux-nav .has-dropdown{ }
     #aux-nav ul.dropdown{  width: 100%; }
     #aux-nav ul.dropdown li{  border-bottom: solid 1px #ebebeb; }
     #aux-nav li.has-dropdown > a:after {  content: "";  display: block;  width: 0;  height: 0;  border: inset 5px;  border-color: rgba(0, 0, 0, 0.4) transparent transparent transparent;  border-top-style: solid;  margin-right: 15px;  margin-top: -2.5px;  position: absolute;  top: 50%;  right: 0; }
     #aux-nav li {  float: left; }
-    #aux-nav li a{  background: #f7f7f7;  color: #000;  font-size: 1.0833rem;  line-height: 58px;  padding: 0 15px;  display: block;  white-space: nowrap; }
+    #aux-nav li a{  background: #f7f7f7;  color: #000;  font-size: 0.8125rem;  line-height: 58px;  padding: 0 15px;  display: block;  white-space: nowrap; }
     #aux-nav ul li a:hover{  background: #EDEDED; }
     #aux-nav li.has-dropdown{  position: relative; }
     /** first level **/
@@ -388,7 +388,7 @@ p.img_caption {font-size: 0.75rem;}
     background:initial;
 }
 #headerlogo tr td{
-    font-size: 120%;
+    font-size: 1.2rem;
     line-height: 1;
     margin:0;
     padding:0;
@@ -400,7 +400,7 @@ p.img_caption {font-size: 0.75rem;}
 #aname{
     border-top: 1px solid #000;
     line-height: 0.75 !important;
-    font-size: 300% !important;
+    font-size: 3rem !important;
     font-weight: 900;
 }
 #atag{
