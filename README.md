@@ -16,6 +16,12 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
  - Est. release date: April 20, 2016
 
 ## CHANGE LOGS
+**2016-26-04**
+- Fix a bug on adding an image using the Header Full Upload
+- Fix a bug when positioning the banner to the contents.
+- Temporary remove the com_newsfeed under the html folder
+- Reduced the height of the sub menus.
+
 **2016-03-04**
 - Rebranding to GWT-Joomla! P2 version 2.0.0
 
