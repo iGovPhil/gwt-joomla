@@ -210,7 +210,7 @@ $lp = $HeaderLogoPosition == 0 ? 'text-align:left;' : 'display:block; margin: 0 
 $aname = $HeaderName == '' ? 'The Agency Name' : $HeaderName;
 $atag = $HeaderTagline == '' ? '"A sample tagline"' : $HeaderTagline;
 $alogo = $HeaderLogo == '' ? '' : '<img src="'.$HeaderLogo.'" alt="'.$HeaderLogoAlt.'" title="'.$HeaderLogoAlt.'" style="height:100px; padding-right:10px;"/>';
-echo $aftype = $HeaderFontFamily == 0 ? '' : 'font-family: "Times New Roman", Times, serif';
+$aftype = $HeaderFontFamily == 0 ? '' : "font-family: 'Times New Roman', Times, serif";
 
 $logo1 = '<a href="'.$this->baseurl.'">
   <table id="headerlogo" style="'.$lp.' color:'.$HeaderTextColor.'; '.$aftype.';">
