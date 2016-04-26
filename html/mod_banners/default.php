@@ -3,14 +3,24 @@ defined('_JEXEC') or die;
 
 require_once JPATH_ROOT . '/components/com_banners/helpers/banner.php';
 $baseurl = JUri::base();
+
+$x = 0;
+foreach ($list as $item){
+	$x++;
+}
+
+if($x>1){
+	$slides = "rsslides";
+}
+
 ?>
-<ul class="rsslides bannergroup<?php echo $moduleclass_sfx ?>">
+<div class="<?php echo $slides;?> bannergroup<?php echo $moduleclass_sfx ?>">
 <?php if ($headerText) : ?>
 	<?php echo $headerText; ?>
 <?php endif; ?>
 
 <?php foreach ($list as $item) : ?>
-	<li class="banneritem">
+	<div class="banneritem">
 		<?php $link = JRoute::_('index.php?option=com_banners&task=click&id=' . $item->id);?>
 		<?php if ($item->type == 1) :?>
 			<?php // Text based banners ?>
@@ -98,9 +108,11 @@ $baseurl = JUri::base();
 		<?php endif;?>
 		<div class="clr"></div>
 
+		<?php if($item->description != ''){ ?>
 		<p class="caption"><?php echo $item->description; ?></p>
+		<?php } ?>
 
-	</li>
+	</div>
 <?php endforeach; ?>
 
 <?php if ($footerText) : ?>

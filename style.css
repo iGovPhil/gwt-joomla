@@ -208,6 +208,8 @@ body.contrast #accessibility-widget ul li a#accessibility-statement span {
 .top-bar-section ul li:hover:not(.has-form) > a,
 .top-bar-section .dropdown li:not(.has-form) a:not(.button){ background: #f7f7f7; color: #000; line-height: 58px; }
 
+.top-bar-section ul.dropdown li a{line-height: 40px !important;}
+
 .top-bar-section li:not(.has-form) a:not(.button):hover,
 .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button){ background: #EDEDED; color: #000; }
 .top-bar-section > ul > [role="separator"]{ height: 58px; }

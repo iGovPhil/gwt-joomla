@@ -225,7 +225,7 @@ $logo1 = '<a href="'.$this->baseurl.'">
 </a>';
 
 if($HeaderTypeLogo==0){
-  if ($HeaderLogo){$logo = '<a href="'.$this->baseurl.'"><img src="'.$HeaderLogoFull.'" alt="'.$HeaderLogoAlt.'" title="'.$HeaderLogoAlt.'" style="'.$lp.';" /></a>';}
+  if ($HeaderLogoFull!=''){$logo = '<a href="'.$this->baseurl.'"><img src="'.$HeaderLogoFull.'" alt="'.$HeaderLogoAlt.'" title="'.$HeaderLogoAlt.'" style="'.$lp.';" /></a>';}
   else{$logo = '<a href="'.$this->baseurl.'"><h1 style="'.$lp.';">Agency Logo</h1></a>';}
 }else{$logo = $logo1;}
 
