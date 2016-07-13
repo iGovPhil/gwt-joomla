@@ -1,4 +1,5 @@
-<div id="panel-top" class="row">
+<div id="panel-top" style="background:<?php echo $paneltopColor; ?>;">
+	<div class="row">
 	<?php if($tp1): ?>
 		<div class="<?php echo $tpc; ?>">
 			<jdoc:include type="modules" name="panel-top-1" style="xhtml" />
@@ -22,4 +23,5 @@
 			<jdoc:include type="modules" name="panel-top-4" style="xhtml" />
 		</div>
 	<?php endif; ?>
+	</div>
 </div>

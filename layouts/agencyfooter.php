@@ -1,4 +1,4 @@
-<div id="footer" name="agencyfooter">
+<div id="footer" name="agencyfooter" style="background:<?php echo $agencyFooterBgColor; ?>;">
 	<div class="row">
 		<?php if($ftr1): ?>
 			<div class="<?php echo $fpc; ?>">
