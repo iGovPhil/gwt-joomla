@@ -9,13 +9,19 @@ Notes:
 ## Known bugs and requests for enhancements (RFEs)
 For a list of known issues and RFEs, check the [issue tracking system](https://github.com/iGovPhil/gwt-joomla/issues).
 
-## Future updates (v2.1)
- - Enhanced PST module
- - Foundation 6 framework
- - Enhanced accessibility features
- - Est. release date: April 20, 2016
+## Future updates
+- none
 
 ## CHANGE LOGS
+**2016-13-07**
+- Update Foundation to v6
+- Change and remove most of the overrides
+- Bring Accesssibility back
+- Bring the Orbit Slider back
+- Use Font Awesome on icons
+- Use the new PST
+- Change the mobile menu to off canvas and drilldown
+
 **2016-26-04**
 - Fix a bug on adding an image using the Header Full Upload
 - Fix a bug when positioning the banner to the contents.

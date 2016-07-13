@@ -207,10 +207,33 @@ $rtrpncy = '';
 $lsb = $this->countModules('left-sidebar');
 $rsb = $this->countModules('right-sidebar');
 
-$pst =  '<div id="pst" class="time" >
-      <h3 class="text-center">PHILIPPINE STANDARD TIME</h3>
-      <div id="pst_wrapper"><iframe src="http://oras.pagasa.dost.gov.ph/time_display/time/" frameborder="0" width="100%" allowTransparency="true" scrolling="no"></iframe></div>
-    </div>';
+$pst = '<div id="pst-container" style="display:block; text-align:<?php echo $pst_align; ?>;">
+  <div style="font-style:Roboto; color:#333;">
+    <div style="font-size:1rem;"><b>Philippine Standard Time</b></div>
+    <div style="font-size:0.875rem;">
+      <span id="pst-date"></span>
+      <span id="pst-time"></span>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" id="gwt-pst">
+(function(d, eId) {
+  var js, gjs = d.getElementById(eId);
+  js = d.createElement("script"); js.id = "gwt-pst-jsdk";
+  js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
+  gjs.parentNode.insertBefore(js, gjs);
+}(document, "gwt-pst"));
+
+var gwtpstReady = function(){
+  var otherFormat = "dddd, mmmm dd, yyyy h:mm:ss TT";
+  var firstPst = new gwtpstTime("pst-date", {format: otherFormat});
+}
+</script>';
+
+
+
+
 $trpncy = '<div id="trpncy" style="text-align:center;">
         <a href="'.$transparencyURL.'">
           <img src="templates/'.$this->template.'/images/transparency-seal.png" class="trpncy" width=225px alt="Transparency Seal" title="Transparency Seal"/>
