@@ -101,8 +101,6 @@ jQuery(document).ready(function($) {
   c = a-b;
   $('#stc').click(function(event) {
     event.preventDefault();
-    alert(a);
-    alert(b);
     $('html, body').animate({scrollTop:c}, duration);
     return false;
   });

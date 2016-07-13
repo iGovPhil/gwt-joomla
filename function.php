@@ -231,9 +231,6 @@ var gwtpstReady = function(){
 }
 </script>';
 
-
-
-
 $trpncy = '<div id="trpncy" style="text-align:center;">
         <a href="'.$transparencyURL.'">
           <img src="templates/'.$this->template.'/images/transparency-seal.png" class="trpncy" width=225px alt="Transparency Seal" title="Transparency Seal"/>
