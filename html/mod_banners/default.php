@@ -19,6 +19,7 @@ $baseurl = JUri::base();
 	<?php endif; ?>
 
 <?php $count=count($list); ?>
+<?php $x = 1; ?>
 
 		<?php if($count>1):?>
 		<button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
@@ -26,7 +27,15 @@ $baseurl = JUri::base();
 	    <?php endif; ?>
 
 	<?php foreach ($list as $item) : ?>
+
 		<li class="orbit-slide banneritem">
+			
+			<?php if($count>1):?>
+			<?php if($x>$count){$x=1;} ?>
+			<span id="orbit_cnt" class="float-left"><?php echo $x.' of '.$count ?></span>
+			<?php $x++;	?>
+			<?php endif; ?>
+			
 			<?php $link = JRoute::_('index.php?option=com_banners&task=click&id=' . $item->id);?>
 			<?php if ($item->type == 1) :?>
 				<?php // Text based banners ?>

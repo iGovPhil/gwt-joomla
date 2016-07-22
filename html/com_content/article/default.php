@@ -63,17 +63,13 @@ JHtml::_('behavior.caption');
 	<?php endif; ?>
 	<?php if (!$this->print) : ?>
 		
-		<?php //if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
-			<?php //echo JLayoutHelper::render('joomla.content.icons', array('params' => $params, 'item' => $this->item, 'print' => false)); ?>
-		<?php //endif; ?>
-
-		<ul class="float-left">
+		<ul class="p-icons">
 		<?php if ($params->get('show_print_icon')) : ?>
-			<li class="print-icon"> <?php echo JHtml::_('icon.print_popup', $this->item, $params); ?> </li>
+			<li class="print-icon">
+				<i class="fa fa-print" aria-hidden="true" style="color:#2ba6cb;"></i> 
+				<?php echo JHtml::_('icon.print_popup', $this->item, $params); ?>
+			</li>
 		<?php endif; ?>
-		<?php //if ($params->get('show_email_icon')) : ?>
-			<!-- <li class="email-icon"> <?php //echo JHtml::_('icon.email', $this->item, $params); ?> </li> -->
-		<?php //endif; ?>
 		<?php if ($canEdit) : ?>
 			<li class="edit-icon"> <?php echo JHtml::_('icon.edit', $this->item, $params); ?> </li>
 		<?php endif; ?>

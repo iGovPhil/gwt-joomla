@@ -56,3 +56,22 @@ function modChrome_well($module, &$params, &$attribs)
 	}
 }
 
+function modChrome_sidebar($module, &$params, &$attribs)
+{
+	$moduleTag     = $params->get('module_tag', 'div');
+	$headerTag     = htmlspecialchars($params->get('header_tag', 'h3'));
+	$headerClass   = htmlspecialchars($params->get('header_class', 'page-header'));
+
+	if ($module->content)
+	{
+		echo '<' . $moduleTag . ' class="sidebar-module moduletable ' . htmlspecialchars($params->get('moduleclass_sfx')) . '">';
+
+			if ($module->showtitle)
+			{
+				echo '<' . $headerTag . ' class="sidebar-header ' . $headerClass . '">' . $module->title . '</' . $headerTag . '>';
+			}
+
+			echo $module->content;
+		echo '</' . $moduleTag . '>';
+	}
+}

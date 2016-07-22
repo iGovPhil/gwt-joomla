@@ -1,4 +1,4 @@
-      <div id="offCanvasRight" class="off-canvas position-right hide-for-large" data-off-canvas data-position="right">
+      <div id="offCanvasRight" class="off-canvas position-right hide-for-large" data-off-canvas data-position="right" data-hide="large">
         <div id="search-canvas">
           <jdoc:include type="modules" name="search" style="none" />
         </div>
@@ -13,7 +13,7 @@
 
     <div class="off-canvas-content" data-off-canvas-content>
 
-      <div class="title-bar" data-responsive-toggle="gwt-menu" data-hide-for="large">
+      <div class="title-bar hide-for-large" data-responsive-toggle="gwt-menu" data-hide-for="large">
         <div class="title-bar-left">
           <a href="http://www.gov.ph"><h1 class="title-bar-title">GOVPH</h1></a>
         </div>
@@ -62,12 +62,12 @@
                                 <i class="fa fa-low-vision fa-2x" aria-hidden="true"></i>
                               </a>
                             </li>
-                            <li>
+                            <!-- <li>
                               <a href="#" id="accessibility-grayscale" class="toggle-grayscale" title="Toggle Gray Scale">
                                 <span class="show-for-sr">Toggle Gray Scale</span>
                                 <i class="fa fa-adjust fa-2x" aria-hidden="true"></i>
                               </a>
-                            </li>
+                            </li> -->
                             <li>
                               <a href="#" id="stc" href="#" title="Skip to Content">
                                 <span class="show-for-sr">Skip to Content</span>

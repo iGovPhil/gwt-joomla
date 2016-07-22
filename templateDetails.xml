@@ -79,22 +79,22 @@
 				<field name="header_note2" type="note" label="if 'Image Only' is Selected" description="the following options can be configured" />
 
 				<field name="HeaderLogoFull" class="" type="media" default="" label="Header Full Upload" description="Upload the image of your logo with agency name" />
-				
-				<field name="header_note3" type="note" label="More Header Options" />
-
 				<field name="HeaderLogoPosition" type="radio" class="btn-group" default="0" label="Header Logo Position" description="Select Logo Position">
 					<option value="0">LEFT</option>
 					<option value="1">CENTER</option>
 				</field>
+				
+				<field name="header_note3" type="note" label="More Header Options" />
+
 				<field name="HeaderLogoAlt" class="" type="text" default="" label="Header Logo Alt" description="Input the Alt for your image logo" />
 				<field name="HeaderBgColor" class="" type="color" default="#0D4E86" label="Header Background Color" description="Enter the hex code for your header background color." />
 				<field name="HeaderBgImage" class="" type="media" default="" label="Header Background Image" description="Enter your header's background image here." />
-				<field name="HeaderRptBgImage" class="btn-group" type="radio" default="0" label="Header Background Image Option" description="Enter your header's background image here.">
-					<option value="0">Repeat Background Image</option>
-					<option value="1">No Repeat on Background Image</option>
-					<option value="2">Full Canvas on Background Image</option>
+				<field name="HeaderRptBgImage" class="btn-group" type="radio" default="0" label="Header Background Image Option" description="Change Header's Image Background Option">
+					<option value="0">Repeat</option>
+					<option value="1">No Repeat</option>
+					<option value="2">Full Canvas</option>
 				</field>
-				<field name="HeaderColumns" type="radio" class="btn-group" default="0" label="Header Columns" description="Select number of columns for header.">
+				<field name="HeaderColumns" type="radio" class="btn-group" default="1" label="Header Columns" description="Select number of columns for header.">
 					<option value="0">1 COL</option>
 					<option value="1">2 COLS</option>
 					<option value="2">3 COLS Left</option>
@@ -105,10 +105,10 @@
 				<field name="banner_note" type="note" label="Banner Options" />
 				<field name="bannerBgColor" class="" type="color" default="#0D4E86" label="Banner Background Color" description="Enter the hex code for your banner background color." />
 				<field name="bannerBgImage" class="" type="media" default="" label="Banner Background Image" description="Enter your banner's background image here." />
-				<field name="bannerRptBgImage" class="btn-group" type="radio" default="0" label="Banner Background Image Option" description="Enter your header's background image here.">
-					<option value="0">Repeat Background Image</option>
-					<option value="1">No Repeat on Background Image</option>
-					<option value="2">Full Canvas on Background Image</option>
+				<field name="bannerRptBgImage" class="btn-group" type="radio" default="0" label="Banner Background Image Option" description="Change Banner's Image Background option">
+					<option value="0">Repeat</option>
+					<option value="1">No Repeat</option>
+					<option value="2">Full Canvas</option>
 				</field>
 				<field name="bannerPosition" type="radio" class="btn-group" default="0" label="Banner Position" description="Select banner position">
 					<option value="0">Standard 1 COL</option>
@@ -117,10 +117,14 @@
 				</field>
 				<field name="bannerFeaturedColor" class="" type="color" default="" label="Banner Featured Content Color" description="Enter the hex code for your banner's featured content background color." />
 				<field name="bannerFeaturedImage" class="" type="media" default="" label="Banner Featured Content Background Image"	description="Enter your banner's featured content background image here." />
-				<field name="bannerFeatRptBgImage" class="btn-group" type="radio" default="0" label="Banner Featured Background Image Option" description="Enter your header's background image here.">
-					<option value="0">Repeat Background Image</option>
-					<option value="1">No Repeat on Background Image</option>
-					<option value="2">Full Canvas on Background Image</option>
+				<field name="bannerFeatRptBgImage" class="btn-group" type="radio" default="0" label="Banner Featured Background Image Option" description="Change Featured Banner's Image Background option">
+					<option value="0">Repeat</option>
+					<option value="1">No Repeat</option>
+					<option value="2">Full Canvas</option>
+				</field>
+				<field name="bannerOnHome" type="radio" default="1" label="Banner on Homepage Only" description="When enabled the Main Banner/Image Slider will be available in homepage only.">
+					<option value="0">Disabled</option>
+					<option value="1">Enabled</option>
 				</field>
 			</fieldset>
 
@@ -134,7 +138,7 @@
 				</field>
 
 				<!-- Transparency --> 
-				<field name="transparencyPosition" type="radio" class="btn-group" default="0" label="Transparency Position" description="Position of the Transparency Seal.">
+				<field name="transparencyPosition" type="radio" class="btn-group" default="1" label="Transparency Position" description="Position of the Transparency Seal.">
 					<option value="1">LEFT</option>
 					<option value="0">NONE</option>
 					<option value="2">RIGHT</option>
@@ -142,11 +146,20 @@
 				<field name="transparencyURL" class="" type="URL" default="#" label="Transparency Page URL" description="Input the URL of the Transparency Page" />
 
 				<!-- PST -->
-				<field name="pstPosition" type="radio" class="btn-group" default="0" label="PST Position" description="Position of the Philippine Standard Module. If none, must have a replacement PST module.">
+				<field name="pstPosition" type="radio" class="btn-group" default="3" label="PST Position" description="Position of the Philippine Standard Time. If none, must have a replacement PST module.">
 					<option value="1">LEFT</option>
 					<option value="0">NONE</option>
 					<option value="2">RIGHT</option>
+					<option value="3">Masthead Featured 1</option>
+					<option value="4">Masthead Featured 2</option>
 				</field>
+				<field name="pstAlign" type="radio" class="btn-group" default="right" label="PST's Alignment" description="Changes the PST's alignment">
+					<option value="left">LEFT</option>
+					<option value="center">CENTER</option>
+					<option value="right">RIGHT</option>
+				</field>
+				<field name="pstFontColor" type="color" class="" default="#fff" label="PST's Font Color" description="Changes the PST's Font Color"/>
+				<field name="pstBgColor" type="color" class="" default="" label="PST's Background Color" description="Changes the PST's Background Color"/>
 
 				<!-- Contents -->
 				<field name="contentBorder" type="radio" class="btn-group" default="1" label="Content Border" description="Insert Border to Content">
@@ -192,6 +205,7 @@
 					<option value="0">Normal</option>
 					<option value="2">Larger</option>
 				</field>
+				<field name="contentHeaderColor" type="color" class="" default="" label="Content Header Font Color" description="Change Content Header Color"/>
 				<field name="contentBgColor" type="color" class="" default="" label="Content Background Color" description="Change Content Background Color"/>
 
 				<!-- Panel -->
@@ -204,20 +218,30 @@
 
 			</fieldset>  
 
-			<fieldset name="accessibility" label="Accessibility">
+			<fieldset name="accessibility" label="Accessibility"
+				addfieldpath="administrator/components/com_modules/models/fields">
 				<field type="note" label="Shortcut Keys Combination Activation" description="Combination keys used for each browser." />
 				<field type="note" description="Chrome for Linux press (Alt+Shift+shortcut_key)" />
 				<field type="note" description="Chrome for Windows press (Alt+shortcut_key)" />
 				<field type="note" description="For Firefox press (Alt+Shift+shortcut_key)" />
 				<field type="note" description="For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter)" />
+				<field type="note" description="On OSX press (Ctrl+Opt+shortcut_key)" />
+				
 				<field name="accessAccessibility" class="" type="text" default="" label="Accessibility Access Key Site (Combination+0): Accessibility Statement" description="Enter link for accessibility accesskey (0)" />
-				<field name="accessHome" class="" type="text" default="index.php" label="Accessibility Access Key Site (Alt+1): Home" description="Enter link for home accesskey (1)" />
-				<field name="accessContent" class="" type="text" default="#maincontents" label="Accessibility Access Key Site (Alt+R): Main Content" description="Enter link for main content accesskey (R)" />
-				<field name="accessFAQ" class="" type="text" default="" label="Accessibility Access Key Site (Alt+5): FAQ" description="Enter link for FAQ accesskey (5)" />
-				<field name="accessContact" class="" type="text" default="" label="Accessibility Access Key Site (Alt+C): Contact" description="Enter link for search accesskey (C)" />
-				<field name="accessFeedback" class="" type="text" default="" label="Accessibility Access Key Site (Alt+K): Feedback" description="Enter link for search accesskey (K)" />
-				<field name="accessSiteMap" class="" type="text" default="#footer" label="Accessibility Access Key Site (Alt+M): Site Map" description="Enter link for search accesskey (M)" />
-				<field name="accessSearch" class="" type="text" default="" label="Accessibility Access Key Site (Alt+S): Search" description="Enter link for search accesskey (S)" />
+				
+				<field name="accessHome" class="" type="text" default="index.php" label="Accessibility Access Key Site (Combination+H): Home" description="Enter link for home accesskey (H)" />
+				
+				<field name="accessContent" class="" type="text" default="#main-content" label="Accessibility Access Key Site (Combination+R): Main Content" description="Enter link for main content accesskey (R)" />
+				
+				<field name="accessFAQ" class="" type="text" default="" label="Accessibility Access Key Site (Combination+Q): FAQ" description="Enter link for FAQ accesskey (Q)" />
+				
+				<field name="accessContact" class="" type="text" default="" label="Accessibility Access Key Site (Combination+C): Contact" description="Enter link for search accesskey (C)" />
+				
+				<field name="accessFeedback" class="" type="text" default="" label="Accessibility Access Key Site (Combination+K): Feedback" description="Enter link for search accesskey (K)" />
+				
+				<field name="accessSiteMap" class="" type="text" default="#gwt-standard-footer" label="Accessibility Access Key Site (Combination+M): Site Map" description="Enter link for search accesskey (M)" />
+				
+				<field name="accessSearch" class="" type="text" default="" label="Accessibility Access Key Site (Combination+S): Search" description="Enter link for search accesskey (S)" />
 			</fieldset>
 
 		</fields>

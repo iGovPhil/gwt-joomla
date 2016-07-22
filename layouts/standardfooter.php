@@ -1,4 +1,3 @@
-<!-- standard footer -->      
 <div id="gwt-standard-footer">
 </div>
 <script type="text/javascript">
@@ -11,4 +10,3 @@
 
     }(document, 'script', 'gwt-footer-jsdk'));
 </script>
-<!-- end standard footer -->

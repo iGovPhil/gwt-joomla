@@ -28,26 +28,34 @@ $HeaderLogoPosition = $this->params->get('HeaderLogoPosition');
 $HeaderLogoAlt = $this->params->get('HeaderLogoAlt');
 $HeaderBgColor = $this->params->get('HeaderBgColor');
 $HeaderBgImage = $this->params->get('HeaderBgImage');
+$HeaderBgImage = $this->baseurl.'/'.$HeaderBgImage;
 $HeaderRptBgImage = $this->params->get('HeaderRptBgImage');
 $HeaderColumns = $this->params->get('HeaderColumns');
 $bannerBgColor = $this->params->get('bannerBgColor');
 $bannerBgImage = $this->params->get('bannerBgImage');
+$bannerBgImage = $this->baseurl.'/'.$bannerBgImage;
 $bannerRptBgImage = $this->params->get('bannerRptBgImage');
 $bannerPosition = $this->params->get('bannerPosition');
 $bannerFeaturedColor = $this->params->get('bannerFeaturedColor');
 $bannerFeaturedImage = $this->params->get('bannerFeaturedImage');
+$bannerFeaturedImage = $this->baseurl.'/'.$bannerFeaturedImage;
 $bannerFeatRptBgImage = $this->params->get('bannerFeatRptBgImage');
+$bannerOnHome = $this->params->get('bannerOnHome');
 
 /*** Content Options Variables ***/
 $sidebarPosition = $this->params->get('sidebarPosition');
 $transparencyPosition = $this->params->get('transparencyPosition');
 $transparencyURL = $this->params->get('transparencyURL');
 $pstPosition = $this->params->get('pstPosition');
+$pstAlign = $this->params->get('pstAlign');
+$pstFontColor = $this->params->get('pstFontColor');
+$pstBgColor = $this->params->get('pstBgColor');
 $contentBorder = $this->params->get('contentBorder');
 $contentBorderWt = $this->params->get('contentBorderWt');
 $contentBorderRd = $this->params->get('contentBorderRd');
 $contentBorderColor = $this->params->get('contentBorderColor');
 $contentHeaderFontSize = $this->params->get('contentHeaderFontSize');
+$contentHeaderColor = $this->params->get('contentHeaderColor');
 $contentBgColor = $this->params->get('contentBgColor');
 $paneltopColor = $this->params->get('paneltopColor');
 $panelbtmColor = $this->params->get('panelbtmColor');
@@ -67,13 +75,13 @@ if($this->params->get('accessAccessibility')){
   $accessibilityLink = '<a class="skips" href="'.$this->params->get('accessAccessibility').'" accesskey="0">Skip to Accessibility Instructions</a>';
 }
 if ($this->params->get('accessHome')){
-  $homeLink = '<a class="skips" href="'.$this->params->get('accessHome').'" accesskey="1">Skip to Home</a>';
+  $homeLink = '<a class="skips" href="'.$this->params->get('accessHome').'" accesskey="H">Skip to Home</a>';
 }
 if ($this->params->get('accessContent')){
   $contentLink = '<a class="skips" href="'.$this->params->get('accessContent').'" accesskey="R">Skip to Content</a>';
 }
 if ($this->params->get('accessFAQ')){
-  $FAQLink = '<a class="skips" href="'.$this->params->get('accessFAQ').'" accesskey="5">Skip to FAQ</a>';
+  $FAQLink = '<a class="skips" href="'.$this->params->get('accessFAQ').'" accesskey="Q">Skip to FAQ</a>';
 }
 if ($this->params->get('accessContact')){
   $contactLink = '<a class="skips" href="'.$this->params->get('accessContact').'" accesskey="C">Skip to Contact</a>';
@@ -113,6 +121,17 @@ if ($this->params->get('accessSearch')){
   endif;
 
 /*** Masthead ***/
+if($pstBgColor==''){$pstBgColor='none';}
+$pst_style = "display:block; background:".$pstBgColor."; text-align:".$pstAlign."; color:".$pstFontColor."; font-family:'Roboto Condensed', sans-serif; font-size:0.8rem;";
+$pst = '<div id="pst-container" style="'.$pst_style.'">
+  <div>
+    <div>Philippine Standard Time</div>
+    <div>
+      <span id="pst-time"></span>
+    </div>
+  </div>
+</div>';
+
 function background($image, $color, $repeat){
   $rpt ='';
   $fcanvas='';
@@ -139,7 +158,7 @@ $atag = $HeaderTagline == '' ? '"A sample tagline"' : $HeaderTagline;
 $alogo = $HeaderLogo == '' ? '' : '<img src="'.$HeaderLogo.'" alt="'.$HeaderLogoAlt.'" title="'.$HeaderLogoAlt.'" style="height:100px; width:100px;"/>';
 $aftype = $HeaderFontFamily == 0 ? '' : "font-family: 'Times New Roman', Times, serif";
 
-$logo1 = '<a href="'.$this->baseurl.'">
+$logo1 = '<a href="'.$this->baseurl.'" title="'.$HeaderLogoAlt.'">
 	<div id="logoheader">
   	<ul id="headerlist">
   		<li id="imagelogo">'.$alogo.'</li>
@@ -160,26 +179,37 @@ if($HeaderTypeLogo==0){
   else{$logo = '<a href="'.$this->baseurl.'"><h1 style="'.$lp.';">Agency Logo</h1></a>';}
 }else{$logo = $logo1;}
 
+$pst_mf1 = '';
+$pst_mf2 = '';
+
+if($pstPosition==3){$pst_mf1 = $pst;}
+elseif($pstPosition==4){$pst_mf2 = $pst;}
+
 if($HeaderColumns == 3){
   $c1 = "large-3 medium-12 columns";
   $c2 = "large-6 medium-12 columns";
   $c3 = "large-3 medium-12 columns";
-  $h1 = '<jdoc:include type="modules" name="masthead-feature-1" />';
+  $h1 = $pst_mf1;
+  $h1 .= ' <jdoc:include type="modules" name="masthead-feature-1" />';
   $h2 = $logo;
-  $h3 = '<jdoc:include type="modules" name="masthead-feature-2" />';
+  $h3 = $pst_mf2;
+  $h3 .= ' <jdoc:include type="modules" name="masthead-feature-2" />';
 }elseif($HeaderColumns == 2){
   $c1 = "large-6 medium-12 columns";
   $c2 = "large-3 medium-6 columns";
   $c3 = "large-3 medium-6 columns";
   $h1 = $logo;
-  $h2 = '<jdoc:include type="modules" name="masthead-feature-1" />';
-  $h3 = '<jdoc:include type="modules" name="masthead-feature-2" />';
+  $h2 = $pst_mf1;
+  $h2 .= ' <jdoc:include type="modules" name="masthead-feature-1" />';
+  $h3 = $pst_mf2;
+  $h3 .= ' <jdoc:include type="modules" name="masthead-feature-2" />';
 }elseif($HeaderColumns == 1){
   $c1 = "large-9 medium-12 columns";
   $c2 = "large-3 medium-12 columns";
   $c3 = "";
   $h1 = $logo;
-  $h2 = '<jdoc:include type="modules" name="masthead-feature-1" style="xhtml" />';
+  $h2 = $pst_mf1;
+  $h2 .= ' <jdoc:include type="modules" name="masthead-feature-1" style="xhtml" />';
   $h3 = '';
 }elseif($HeaderColumns == 0){
   $c1 = "large-12 medium-12 columns";
@@ -207,30 +237,6 @@ $rtrpncy = '';
 $lsb = $this->countModules('left-sidebar');
 $rsb = $this->countModules('right-sidebar');
 
-$pst = '<div id="pst-container" style="display:block; text-align:<?php echo $pst_align; ?>;">
-  <div style="font-style:Roboto; color:#333;">
-    <div style="font-size:1rem;"><b>Philippine Standard Time</b></div>
-    <div style="font-size:0.875rem;">
-      <span id="pst-date"></span>
-      <span id="pst-time"></span>
-    </div>
-  </div>
-</div>
-
-<script type="text/javascript" id="gwt-pst">
-(function(d, eId) {
-  var js, gjs = d.getElementById(eId);
-  js = d.createElement("script"); js.id = "gwt-pst-jsdk";
-  js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
-  gjs.parentNode.insertBefore(js, gjs);
-}(document, "gwt-pst"));
-
-var gwtpstReady = function(){
-  var otherFormat = "dddd, mmmm dd, yyyy h:mm:ss TT";
-  var firstPst = new gwtpstTime("pst-date", {format: otherFormat});
-}
-</script>';
-
 $trpncy = '<div id="trpncy" style="text-align:center;">
         <a href="'.$transparencyURL.'">
           <img src="templates/'.$this->template.'/images/transparency-seal.png" class="trpncy" width=225px alt="Transparency Seal" title="Transparency Seal"/>
@@ -238,8 +244,7 @@ $trpncy = '<div id="trpncy" style="text-align:center;">
       </div>';
 
 if($pstPosition == 1){$lsb = $lsb + 1;$lpst = $pst;} 
-else if($pstPosition == 2){$rsb = $rsb + 1; $rpst = $pst;
-}
+else if($pstPosition == 2){$rsb = $rsb + 1; $rpst = $pst;}
 
 if($transparencyPosition == 1){$lsb = $lsb + 1;$ltrpncy = $trpncy;}
 else if($transparencyPosition == 2){$rsb = $rsb + 1;$rtrpncy = $trpncy;}
@@ -272,12 +277,14 @@ if($sidebarPosition == 0){
   $src = "large-3 medium-3 columns";
 }
 
-$contentBorderWt = $contentBorderWt/16;
+$contentBackground = 'background:'.$contentBgColor;
+$contentBorderRd = 'border-radius:'.$contentBorderRd.'px';
 
+$contentBorderWt = $contentBorderWt/16;
 if($contentBorder == 0){
   $contentBorder = 'border: none';
 }else if($contentBorder == 1){
-  $contentBorder = 'border: solid '.$contentBorderWt.'rem '.$contentBorderColor;
+  $contentBorder = 'border: solid '.$contentBorderWt.'rem '.$contentBorderColor.'; border-radius:'.$contentBorderRd;
 }else if($contentBorder == 2){
   $contentBorder = 'border: none; border-top: solid '.$contentBorderWt.'rem '.$contentBorderColor;
 }else if($contentBorder == 3){
@@ -285,28 +292,41 @@ if($contentBorder == 0){
 }
 
 $chfs = $contentHeaderFontSize;
-if($chfs == 0){
-  $sh1 = (44-4)/16;
-  $sh2 = (37-4)/16;
-  $sh3 = (27-4)/16;
-  $sh4 = (23-4)/16;
-  $sh5 = (18-4)/16;
-  $sh6 = (16-4)/16;
-}else if($chfs == 1){
-  $sh1 = (44-12)/16;
-  $sh2 = (37-12)/16;
-  $sh3 = (27-12)/16;
-  $sh4 = (23-12)/16;
-  $sh5 = (18-12)/16;
-  $sh6 = (16-12)/16;
-}else if($chfs == 2){
-  $sh1 = (44+4)/16;
-  $sh2 = (37+4)/16;
-  $sh3 = (27+4)/16;
-  $sh4 = (23+4)/16;
-  $sh5 = (18+4)/16;
-  $sh6 = (16+4)/16;
+// if($chfs == 0){
+//   $sh1 = (44-4)/16;
+//   $sh2 = (37-4)/16;
+//   $sh3 = (27-4)/16;
+//   $sh4 = (23-4)/16;
+//   $sh5 = (18-4)/16;
+//   $sh6 = (16-4)/16;
+// }else if($chfs == 1){
+//   $sh1 = (44-8)/16;
+//   $sh2 = (37-8)/16;
+//   $sh3 = (27-8)/16;
+//   $sh4 = (23-8)/16;
+//   $sh5 = (18-8)/16;
+//   $sh6 = (16-8)/16;
+// }else if($chfs == 2){
+//   $sh1 = (44+4)/16;
+//   $sh2 = (37+4)/16;
+//   $sh3 = (27+4)/16;
+//   $sh4 = (23+4)/16;
+//   $sh5 = (18+4)/16;
+//   $sh6 = (16+4)/16;
+// }
+
+if($chfs==0){
+  $sh1 = (48-4)/16;
+  $sh2 = (40-4)/16;
+  $sh3 = (31-4)/16;
+}else if($chfs==1){
+  $sh1 = (48-8)/16;
+  $sh2 = (40-8)/16;
+  $sh3 = (31-8)/16;
 }
+
+
+
 
 /*** Panels ***/
 function panels($p1, $p2, $p3, $p4){
