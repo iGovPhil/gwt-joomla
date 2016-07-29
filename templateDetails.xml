@@ -71,7 +71,7 @@
 				<field name="HeaderName" class="" type="text" default="" label="Header Logo Name" description="Input the name of your agency" />
 				<field name="HeaderTagline" class="" type="text" default="" label="Header Logo Tagline" description="Input an additional tagline for your agency" />
 				<field name="HeaderFontFamily" type="radio" class="btn-group" default="0" label="Header Font Type" description="Select Font Type">
-					<option value="0">San Serif</option>
+					<option value="0">Sans Serif</option>
 					<option value="1">Serif</option>
 				</field>
 				<field name="HeaderTextColor" class="" type="color" default="#000" label="Header Text Color" description="Input an additional tagline for your agency" />
@@ -162,6 +162,10 @@
 				<field name="pstBgColor" type="color" class="" default="" label="PST's Background Color" description="Changes the PST's Background Color"/>
 
 				<!-- Contents -->
+
+				<field name="ContentLinkColor" type="color" class="" default="#2ba6cb" label="Content Link Color" description="Changes the color of the content links"/>
+				<field name="ContentLinkColorHover" type="color" class="" default="#258faf" label="Content Link Color on Hover" description="Changes the color of the content links on hover"/>
+
 				<field name="contentBorder" type="radio" class="btn-group" default="1" label="Content Border" description="Insert Border to Content">
 					<option value="0">No Border</option>
 					<option value="1">Full Border</option>

@@ -1,7 +1,7 @@
 <?php if($this->countModules('banner')): ?>
 
 	<?php if($bannerPosition!=2): ?>
-	<div id='banner' <?php echo $bannerBackground; ?>>
+	<div id='banner' <?php echo $bannerBackground; ?> class="show-for-medium show-for-large">
 		<div class='row'>
 			
 		<?php if($bannerOnHome): ?>
@@ -26,10 +26,12 @@
 		
 
 			<?php if($bannerPosition==1): ?>
-			<div id='fbnr' class='<?php echo $fbcl ?>' <?php echo $featuredBackground;?>>
+			<div id='fbnr' class='<?php echo $fbcl ?> content-container'>
+				<div <?php echo $featuredBackground;?>>
 				<?php if($this->countModules('banner-featured')): ?>
 				<jdoc:include type="modules" name="banner-featured" style="xhtml"/>
 				<?php endif; ?>
+				</div>
 			</div>
 			<?php endif; ?>
 
@@ -37,7 +39,7 @@
 		</div>
 	</div>
 	<?php else: ?>		
-		<div id="fullbanner">
+		<div id="fullbanner" class="show-for-medium show-for-large">
 			<jdoc:include type="modules" name="banner"/>
 		</div>
 	<?php endif; ?>

@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 require_once JPATH_ROOT . '/components/com_banners/helpers/banner.php';
 $baseurl = JUri::base();
 ?>
-<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;" data-show-status="1" data-status-text="%currentSlide of %totalSlide" data-timer-delay="5000">
 	<ul class="orbit-container bannergroup<?php echo $moduleclass_sfx ?>">
 	<?php if ($headerText) : ?>
 		<?php echo $headerText; ?>

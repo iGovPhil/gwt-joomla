@@ -1,4 +1,4 @@
-<div id="gwt-standard-footer">
+<div id="gwt-standard-footer" class="content-container">
 </div>
 <script type="text/javascript">
     (function(d, s, id) {

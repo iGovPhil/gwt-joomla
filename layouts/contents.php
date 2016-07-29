@@ -1,4 +1,4 @@
-<div id="main-content"> 
+<div id="main-content" class="content-container"> 
 	<a name="maincontents"></a>
 	<div class="row">
 		

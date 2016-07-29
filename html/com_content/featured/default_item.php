@@ -48,7 +48,7 @@ $info    = $this->item->params->get('info_block_position', 0);
 <ul class="p-icons">
 <?php if ($params->get('show_print_icon')) : ?>
 	<li class="print-icon"> 
-		<i class="fa fa-print" aria-hidden="true" style="color:#2ba6cb;"></i> 
+		<i class="fa fa-print" aria-hidden="true"></i> 
 		<?php echo JHtml::_('icon.print_popup', $this->item, $params); ?> 
 	</li>
 <?php endif; ?>

@@ -15,9 +15,17 @@ include_once JPATH_THEMES.'/'.$this->template.'/function.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
+
+    .content-container a, .content-container a:active, .content-container a:visited{color:<?php echo $ContentLinkColor;?>;}
+    .content-container a:focus, .content-container a:hover{color:<?php echo $ContentLinkColorHover;?>;}
+
+    <?php if($agencyFooterBgColor): ?>
     #footer{background:<?php echo $agencyFooterBgColor ?>;}
-    #main-content .moduletable, #main-content .modulearticle{<?php echo $contentBackground;?>; <?php echo $contentBorder;?>;
+    <?php endif; ?>
+
+    #main-content .moduletable, #main-content .modulearticle{<?php echo $contentBackground;?> <?php echo $contentBorder;?>;
       margin-bottom:1rem; padding:0.625rem;}
+
     <?php if($contentHeaderColor): ?>
     .sidebar-header, .modulearticle .item-title a{color:<?php echo $contentHeaderColor ?>;}
     <?php endif; ?>
@@ -27,6 +35,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/function.php';
     #main-content .modulearticle h2.item-title a{font-size:<?php echo $sh2; ?>rem;}
     .moduletable h3.sidebar-header{font-size:<?php echo $sh3; ?>rem;}
     <?php endif; ?>
+
   </style>
   <head>
 
@@ -54,6 +63,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/function.php';
   <script src="<?php echo 'templates/' . $this->template . '/js/foundation/vendor/foundation.js'; ?>"></script>
   <script src="<?php echo 'templates/' . $this->template . '/js/theme.js'; ?>"></script>
   <script src="<?php echo 'templates/' . $this->template . '/js/logic.js'; ?>"></script>
+
 <?php if($pstPosition != 0): ?>  
   <script type="text/javascript" id="gwt-pst">
     (function(d, eId){

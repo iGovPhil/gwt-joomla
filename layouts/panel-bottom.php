@@ -1,4 +1,4 @@
-<div id="panel-bottom" style="background:<?php echo $panelbtmColor; ?>;">
+<div id="panel-bottom" class="content-container" style="background:<?php echo $panelbtmColor; ?>;">
 	<div class="row">
 		<?php if($btm1): ?>
 			<div class="<?php echo $bpc; ?>">

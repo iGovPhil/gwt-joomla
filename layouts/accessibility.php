@@ -28,7 +28,7 @@ Shortcut Keys Combination Activation Combination keys used for each browser.
     Chrome for Windows press (Alt+shortcut_key) 
     For Firefox press (Alt+Shift+shortcut_key) 
     For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter) 
-    On OSX press (Ctrl+Opt+shortcut_key) 
+    On Mac OS press (Ctrl+Opt+shortcut_key) 
 
     Accessibility Statement (Combination + 0): Statement page that will show the available accessibility keys.
     Home Page (Combination + H): Accessibility key for redirecting to homepage. 
