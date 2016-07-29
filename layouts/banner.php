@@ -1,7 +1,7 @@
 <?php if($this->countModules('banner')): ?>
 
 	<?php if($bannerPosition!=2): ?>
-	<div id='banner' <?php echo $bannerBackground; ?> class="show-for-medium show-for-large">
+	<div id='banner' <?php echo $bannerBackground; ?> class="hide-for-small-only">
 		<div class='row'>
 			
 		<?php if($bannerOnHome): ?>
@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	<?php else: ?>		
-		<div id="fullbanner" class="show-for-medium show-for-large">
+		<div id="fullbanner" class="hide-for-small-only">
 			<jdoc:include type="modules" name="banner"/>
 		</div>
 	<?php endif; ?>
