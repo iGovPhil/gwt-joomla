@@ -31,6 +31,7 @@ $HeaderBgImage = $this->params->get('HeaderBgImage');
 $HeaderBgImage = $this->baseurl.'/'.$HeaderBgImage;
 $HeaderRptBgImage = $this->params->get('HeaderRptBgImage');
 $HeaderColumns = $this->params->get('HeaderColumns');
+$MainHeaderColor = $this->params->get('MainHeaderColor');
 $bannerBgColor = $this->params->get('bannerBgColor');
 $bannerBgImage = $this->params->get('bannerBgImage');
 $bannerBgImage = $this->baseurl.'/'.$bannerBgImage;
@@ -98,6 +99,7 @@ if ($this->params->get('accessSearch')){
 
   $option = $app->input->getVar('option');
   $view = $app->input->getVar('view');
+  $page_title = $this->getTitle();; 
 
   if ($option == 'com_content' && $view == 'article'):
     $id = $app->input->getInt('id');
