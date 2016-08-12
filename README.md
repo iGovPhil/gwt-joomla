@@ -13,8 +13,8 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 - none
 
 ## CHANGE LOGS
-**2016-13-07**
-- Rebranding to GWT-Joomla version 25.0
+**2016-08-12**
+- Rebrand version to GWT-Joomla version 25
 - Update Foundation to v6
 - Change and remove most of the overrides
 - Bring Accesssibility back
@@ -22,9 +22,8 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 - Use Font Awesome on icons
 - Use the new PST
 - Change the mobile menu to off canvas and drilldown
-- Add additional options on Template Style
 
-**2016-26-04**
+**2016-04-26**
 - Fix a bug on adding an image using the Header Full Upload
 - Fix a bug when positioning the banner to the contents.
 - Temporary remove the com_newsfeed under the html folder
