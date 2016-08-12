@@ -3,7 +3,7 @@
 Notes:
 * See modulepositions.jpg in /images for this template's module positions.
 * Banner width should be 1250px
-* Any content in the masthead area should NOT EXCEED 100px.
+* Any content in the masthead area should NOT EXCEED 100px in height.
 * For experienced Joomla users, please report any template issues to helpdesk@i.gov.ph.
 
 ## Known bugs and requests for enhancements (RFEs)
@@ -14,6 +14,7 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 
 ## CHANGE LOGS
 **2016-13-07**
+- Rebranding to GWT-Joomla version 25.0
 - Update Foundation to v6
 - Change and remove most of the overrides
 - Bring Accesssibility back
@@ -21,6 +22,7 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 - Use Font Awesome on icons
 - Use the new PST
 - Change the mobile menu to off canvas and drilldown
+- Add additional options on Template Style
 
 **2016-26-04**
 - Fix a bug on adding an image using the Header Full Upload

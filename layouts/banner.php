@@ -7,11 +7,11 @@
 		<?php if($bannerOnHome): ?>
 			<?php if ($option == 'com_content' && $view == 'article'): ?>
 			<div class='<?php echo $bcl ?>'>
-				<header>
-		        	<?php if ($article_title): ?>
+				<?php if ($article_title): ?>
+				<header style="color:<?php echo $MainHeaderColor; ?>;">
 		            <h1 class="entry-title"><?php echo $article_title;  ?></h1>
-		        	<?php endif ?>
 	        	</header>
+	        	<?php endif ?>
 	    	</div>
 	        <?php else: ?>
 	        <div id='bnr' class='<?php echo $bcl ?>'>
@@ -48,13 +48,20 @@
 
 	<div id='banner' <?php echo $bannerBackground; ?>>
 		<div class="row">
-		    <div class="large-9 columns">
-		        <header>
-	                <?php if ($article_title): ?>
-	                    <h1 class="entry-title"><?php echo $article_title;  ?></h1>
-	                <?php endif ?>
+		    <div class="large-8 columns">
+		        <header style="color:<?php echo $MainHeaderColor; ?>;">
+	                    <h1 class="entry-title"><?php echo $page_title;  ?></h1>
 		        </header>
 		    </div>
+		    <?php if($bannerPosition==1): ?>
+			<div id='fbnr' class='<?php echo $fbcl ?> content-container'>
+				<div <?php echo $featuredBackground;?>>
+				<?php if($this->countModules('banner-featured')): ?>
+				<jdoc:include type="modules" name="banner-featured" style="xhtml"/>
+				<?php endif; ?>
+				</div>
+			</div>
+			<?php endif; ?>
 		</div>
 	</div>	
 

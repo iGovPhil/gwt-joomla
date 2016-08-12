@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="template" client="site" method="update">
-	<name>GWT Joomla! P2</name>
-	<version>2.5.0</version>
-	<creationDate>June 2016</creationDate>
+	<name>GWT-Joomla</name>
+	<version>25.0</version>
+	<creationDate>July 2016</creationDate>
 	<author>iGov Philippines</author>
 	<authorEmail>helpdesk@i.gov.ph</authorEmail>
 	<authorURL>http://i.gov.ph</authorURL>
@@ -66,7 +66,6 @@
 				</field>
 
 				<field name="header_note1" type="note" label="if 'Image with Text' is Selected" description="the following options can be configured" />
-				
 				<field name="HeaderLogo" class="" type="media" default="" label="Header Logo Upload" description="Upload the image of your Agency logo in 100x100" />
 				<field name="HeaderName" class="" type="text" default="" label="Header Logo Name" description="Input the name of your agency" />
 				<field name="HeaderTagline" class="" type="text" default="" label="Header Logo Tagline" description="Input an additional tagline for your agency" />
@@ -77,7 +76,6 @@
 				<field name="HeaderTextColor" class="" type="color" default="#000" label="Header Text Color" description="Input an additional tagline for your agency" />
 				
 				<field name="header_note2" type="note" label="if 'Image Only' is Selected" description="the following options can be configured" />
-
 				<field name="HeaderLogoFull" class="" type="media" default="" label="Header Full Upload" description="Upload the image of your logo with agency name" />
 				<field name="HeaderLogoPosition" type="radio" class="btn-group" default="0" label="Header Logo Position" description="Select Logo Position">
 					<option value="0">LEFT</option>
@@ -100,6 +98,7 @@
 					<option value="2">3 COLS Left</option>
 					<option value="3">3 COLS Right</option>
 				</field>
+				<field name="MainHeaderColor" class="" type="color" default="#000" label="Main Header Color" description="Change the Color of the Main Header." />
 
 				<!-- Banner -->
 				<field name="banner_note" type="note" label="Banner Options" />
@@ -122,11 +121,12 @@
 					<option value="1">No Repeat</option>
 					<option value="2">Full Canvas</option>
 				</field>
-				<field name="bannerOnHome" type="radio" default="1" label="Banner on Homepage Only" description="When enabled the Main Banner/Image Slider will be available in homepage only.">
+				<field name="bannerOnHome" class="btn-group btn-group-yesno" type="radio" default="1" label="Banner on Homepage Only" description="When enabled the Main Banner/Image Slider will be available in homepage only.">
 					<option value="0">Disabled</option>
 					<option value="1">Enabled</option>
 				</field>
 			</fieldset>
+
 
 			<fieldset name="ContentOptions" label="Content Options">
 				<!-- SideBar/Content Options -->
@@ -246,6 +246,40 @@
 				<field name="accessSiteMap" class="" type="text" default="#gwt-standard-footer" label="Accessibility Access Key Site (Combination+M): Site Map" description="Enter link for search accesskey (M)" />
 				
 				<field name="accessSearch" class="" type="text" default="" label="Accessibility Access Key Site (Combination+S): Search" description="Enter link for search accesskey (S)" />
+
+				<field 
+					name="test1" 
+					type="editor" 
+					label="Test Field" 
+					description="" 
+					width="100" 
+					filter="safehtml" 
+					default="
+					Shortcut Keys Combination Activation Combination keys used for each browser.
+  
+				    Chrome for Linux press (Alt+Shift+shortcut_key) 
+				    Chrome for Windows press (Alt+shortcut_key) 
+				    For Firefox press (Alt+Shift+shortcut_key) 
+				    For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter) 
+				    On Mac OS press (Ctrl+Opt+shortcut_key) 
+
+				    Accessibility Statement (Combination + 0): Statement page that will show the available accessibility keys.
+				    Home Page (Combination + H): Accessibility key for redirecting to homepage. 
+				    Main Content (Combination + R): Shortcut for viewing the content section of the current page. 
+				    FAQ (Combination + Q): Shortcut for FAQ page. 
+				    Contact (Combination + C): Shortcut for contact page or form inquiries. 
+				    Feedback (Combination + K): Shortcut for feedback page. 
+				    Site Map (Combination + M): Shortcut for site map (footer agency) section of the page. 
+				    Search (Combination + S): Shortcut for search page. 
+					
+					Press esc, or click the close the button to close this dialog box.
+					"
+
+
+					/>
+			
+
+
 			</fieldset>
 
 		</fields>
