@@ -145,3 +145,7 @@ h4.newsflash-title {border-top: 1px solid #ddd; padding-top: 5px;}
 @media only screen and (max-width: 40em) {
 #headerlist { text-align: center; }
 }
+
+/** temporary fix for vanishing menu & contacts' popupover **/
+ul.dropdown.menu{display:block !important;}
+div.popover{display:none !important;}
