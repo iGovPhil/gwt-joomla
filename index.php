@@ -72,7 +72,8 @@ include_once JPATH_THEMES.'/'.$this->template.'/function.php';
       js.src = "//gwhs.i.gov.ph/pst/gwtpst.js?"+new Date().getTime();
       gjs.parentNode.insertBefore(js, gjs);
     }(document, "gwt-pst"));
-    var gwtpstReady = function(){new gwtpstTime("pst-time");}
+    var gwtpstReady = function(){new gwtpstTime({elementId: 'pst-time',keyboardTrap: true});
+}
   </script>
 <?php endif; ?>
 
