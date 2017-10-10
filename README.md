@@ -13,6 +13,10 @@ For a list of known issues and RFEs, check the [issue tracking system](https://g
 - none
 
 ## CHANGE LOGS
+**2017-10-10**
+- Fix hyperlink in orbit slider
+- Update PST's "avoid keyboard trap"
+
 **2016-08-12**
 - Rebrand version to GWT-Joomla version 25
 - Update Foundation to v6
