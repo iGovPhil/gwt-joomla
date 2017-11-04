@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="template" client="site" method="update">
 	<name>GWT-Joomla</name>
-	<version>25.1</version>
+	<version>25.2</version>
 	<creationDate>July 2016</creationDate>
 	<author>iGov Philippines</author>
 	<authorEmail>helpdesk@i.gov.ph</authorEmail>
 	<authorURL>http://i.gov.ph</authorURL>
 	<copyright>All content is in the public domain unsless otherwise stated.</copyright>
 	<license>GNU General Public License version 2 or later</license>
-	<description>Government Web Template for Joomla 3.x, version 25</description>
+	<description>Government Web Template for Joomla 3.x, version 25.2</description>
 	
 	<files>
 		<folder>css</folder>
