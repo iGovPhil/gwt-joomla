@@ -2,7 +2,7 @@
 <extension version="3.1" type="template" client="site" method="update">
 	<name>GWT-Joomla</name>
 	<version>25.2</version>
-	<creationDate>July 2016</creationDate>
+	<creationDate>October 2017</creationDate>
 	<author>iGov Philippines</author>
 	<authorEmail>helpdesk@i.gov.ph</authorEmail>
 	<authorURL>http://i.gov.ph</authorURL>
